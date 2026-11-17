@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<meta name="description" content="Confirmación de reserva">
+<title>Reserva confirmada</title>
+<link rel="stylesheet" href="globals.css">
+<link rel="stylesheet" href="styleguide.css">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+/** @type {import('tailwindcss').Config} */
+    tailwind.config = {
+      corePlugins: {
+        preflight: false
+      },
+      theme: {
+        extend: {
+          colors: {
+            "colors-asientos-adaptado": "var(--colors-asientos-adaptado)",
+            "colors-asientos-libre": "var(--colors-asientos-libre)",
+            "colors-asientos-ocupado": "var(--colors-asientos-ocupado)",
+            "colors-asientos-premium": "var(--colors-asientos-premium)",
+            "colors-asientos-seleccionado": "var(--colors-asientos-seleccionado)",
+            "colors-neutros-blanco": "var(--colors-neutros-blanco)",
+            "colors-neutros-blancoroto": "var(--colors-neutros-blancoroto)",
+            "colors-neutros-grisclaro": "var(--colors-neutros-grisclaro)",
+            "colors-neutros-grismedio": "var(--colors-neutros-grismedio)",
+            "colors-neutros-grismediooscuro": "var(--colors-neutros-grismediooscuro)",
+            "colors-neutros-grismuyclaro": "var(--colors-neutros-grismuyclaro)",
+            "colors-neutros-grisoscuro": "var(--colors-neutros-grisoscuro)",
+            "colors-principales-rojoactivo": "var(--colors-principales-rojoactivo)",
+            "colors-principales-rojohover": "var(--colors-principales-rojohover)",
+            "colors-principales-rojooscuro": "var(--colors-principales-rojooscuro)",
+            "colors-principales-rojosuave": "var(--colors-principales-rojosuave)",
+            "colors-semanticos-aviso": "var(--colors-semanticos-aviso)",
+            "colors-semanticos-error": "var(--colors-semanticos-error)",
+            "colors-semanticos-exito": "var(--colors-semanticos-exito)",
+            "colors-semanticos-informacion": "var(--colors-semanticos-informacion)"
+          }
+        }
+      },
+      plugins: []
+    };
+  </script>
+</head>
+<body>
+<main class="bg-white border border-solid border-black w-full min-w-[1440px] min-h-[1024px] flex">
+<section
+      class="flex w-[1440px] h-[1024px] relative flex-col items-center justify-center bg-gray-50"
+      aria-labelledby="confirmation-title"
+    >
+<article class="flex flex-col w-[560px] h-[361px] items-start gap-[38px] p-12 relative bg-white rounded-2xl border border-solid border shadow-[0px_4px_24px_#0000000d]">
+<header class="flex flex-col items-center gap-6 relative self-stretch w-full flex-[0_0_auto] bg-transparent">
+<div
+            class="flex flex-col w-20 h-20 items-center justify-center relative bg-emerald-50 rounded-[40px]"
+            aria-hidden="true"
+          >
+<div class="relative w-10 h-10">
+<img
+                class="absolute w-[85.83%] h-[77.50%] top-[22.50%] left-[14.17%]"
+                src="img/vector.svg"
+                alt=""
+                aria-hidden="true"
+              >
+</div>
+</div>
+<div class="flex flex-col items-center gap-2 relative self-stretch w-full flex-[0_0_auto]">
+<h1
+              id="confirmation-title"
+              class="relative self-stretch mt-[-1.00px] [font-family:'Nunito-Bold',Helvetica] font-bold text-gray-900 text-[28px] text-center tracking-[0] leading-[normal]"
+            >
+¡Reserva confirmada!
+            </h1>
+<p
+              class="relative self-stretch [font-family:'Lato-Regular',Helvetica] font-normal text-gray-500 text-base text-center tracking-[0] leading-6"
+            >
+Tu pago se ha realizado correctamente.
+            </p>
+</div>
+</header>
+<nav class="flex flex-col items-start gap-3 relative self-stretch w-full flex-[0_0_auto]" aria-label="Navegación de confirmación">
+<a
+            class="flex items-center justify-center p-4 relative self-stretch w-full flex-[0_0_auto] bg-gray-900 rounded-lg border border-solid"
+            href="/"
+            aria-label="Volver a la página de inicio"
+          >
+<span
+              class="relative w-fit mt-[-1.00px] [font-family:'Lato-SemiBold',Helvetica] font-semibold text-white text-base tracking-[0] leading-[normal] whitespace-nowrap"
+            >
+Volver a la pagina de inicio
+            </span>
+</a>
+</nav>
+</article>
+</section>
+</main>
+</body>
+</html>
