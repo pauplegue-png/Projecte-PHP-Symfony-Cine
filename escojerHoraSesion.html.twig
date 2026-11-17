@@ -1,381 +1,71 @@
 <!doctype html>
 <html lang="es">
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="utf-8" />
-    <meta
-      name="description"
-      content="Selecciona una fecha y horario para ver Hasta el horizonte"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Escoger día y hora</title>
     <link rel="stylesheet" href="css/colors.css" />
     <link rel="stylesheet" href="fonts/typography.css" />
     <link rel="stylesheet" href="fonts/sizes.css" />
     <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/headers.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="js/tailwind-config.js"></script>
   </head>
-  <body>
-    <div
-      class="bg-[#f5f2f0] overflow-hidden border border-solid border-black w-full min-w-[1440px] min-h-[1041px] relative"
-    >
-      <header
-        class="absolute top-0 left-[-3px] w-[1450px] h-[232px] bg-transparent"
-        aria-label="Información de la película"
-      >
-        <div
-          class="flex flex-col w-[1440px] h-[232px] items-center justify-center pl-[117px] pr-0.5 py-0 absolute top-0 left-0 bg-color-scheme-grays-black overflow-hidden opacity-[0.88]"
-        >
-          <img
-            class="relative w-[1563px] h-[232px] mt-[-329.00px] ml-[-121.00px] mr-[-121.00px] z-[1]"
-            src="img/rectangle-1.png"
-            alt=""
-          />
-          <img
-            class="relative w-[1437px] h-[232px] ml-[-114.00px] mr-[-2.00px] z-0 aspect-[2.38] object-cover"
-            src="img/img.png"
-            alt="Escena de la película Hasta el horizonte"
-          />
-        </div>
-        <div
-          class="absolute top-[147px] left-[517px] w-[142px] h-14 flex items-center justify-center [font-family:'Lato-Regular',Helvetica] font-normal text-[#d14d06] text-2xl text-center tracking-[0] leading-[normal]"
-        >
-          M-12
-        </div>
-        <h1
-          class="absolute top-[82px] left-[484px] w-[490px] h-[75px] flex items-center justify-center [font-family:'Nunito-Regular',Helvetica] font-normal text-white text-[32px] text-center tracking-[0] leading-[normal]"
-        >
-          Hasta el horizonte
-        </h1>
-        <p
-          class="absolute top-[158px] left-[729px] w-[201px] h-[35px] flex items-center justify-center [font-family:'Lato-Regular',Helvetica] font-normal text-white text-2xl text-center tracking-[0] leading-[normal]"
-        >
-          Acción, Drama
-        </p>
-        <p
-          class="absolute top-[149px] left-[616px] w-[119px] h-[52px] flex items-center justify-center [font-family:'Lato-Regular',Helvetica] font-normal text-white text-2xl text-center tracking-[0] leading-[normal]"
-        >
-          159 min
-        </p>
-        <span
-          class="top-[150px] left-[675px] w-[119px] h-[52px] flex items-center justify-center [font-family:'Inter-Regular',Helvetica] font-normal text-white text-2xl leading-[normal] absolute text-center tracking-[0]"
-          aria-hidden="true"
-          >|</span
-        >
-        <nav aria-label="Navegación principal">
-          <button
-            type="button"
-            class="absolute top-[26px] left-[1355px] w-[46px] h-[53px] flex bg-transparent border-0 p-0"
-            aria-label="Cerrar sesión"
-          >
-            <img class="flex-1 w-[38.5px]" src="img/icon.svg" alt="" />
-          </button>
-          <button
-            type="button"
-            class="absolute top-[29px] left-[94px] w-[45px] h-[47px] flex bg-transparent border-0 p-0"
-            aria-label="Volver"
-          >
-            <img class="flex-1 w-[30px]" src="img/icon-2.svg" alt="" />
-          </button>
-          <button
-            type="button"
-            class="absolute top-[31px] left-[34px] w-[43px] h-[43px] bg-transparent border-0 p-0"
-            aria-label="Ir al inicio"
-          >
-            <img class="w-[43px] h-[43px]" src="img/home.svg" alt="" />
-          </button>
-          <button
-            type="button"
-            class="absolute top-[23px] left-[1273px] w-[61px] h-[58px] flex bg-[#a9474f] rounded-[100px] overflow-hidden border border-solid border-[#a6a6a6]"
-            aria-label="Abrir perfil"
-          >
-            <img
-              class="flex-1 w-[42.98px]"
-              src="img/avatar-placeholder.svg"
-              alt=""
-            />
-          </button>
-        </nav>
-      </header>
-      <main>
-        <section
-          class="flex flex-col w-[1335px] h-[174px] items-start gap-5 p-6 absolute top-[297px] left-[43px] bg-white rounded-[20px] overflow-hidden border border-solid border-[#303238]"
-          aria-labelledby="date-heading"
-        >
-          <div
-            class="flex items-center justify-between relative self-stretch w-full flex-[0_0_auto]"
-          >
-            <h2
-              id="date-heading"
-              class="relative w-fit mt-[-1.00px] [font-family:'Inter-SemiBold',Helvetica] font-semibold text-[#555555] text-lg tracking-[0] leading-6 whitespace-nowrap"
-            >
-              Elije el Dia
-            </h2>
-            <p
-              class="relative w-fit [font-family:'Inter-Regular',Helvetica] font-normal text-[#555555] text-[13px] tracking-[0] leading-5 whitespace-nowrap"
-            >
-              4 sesiones
-            </p>
-          </div>
-          <nav
-            class="flex items-center gap-3 relative self-stretch w-full flex-[0_0_auto]"
-            aria-label="Seleccionar fecha"
-          >
-            <button
-              type="button"
-              class="flex w-10 h-10 items-center justify-center relative bg-[#a9474f] rounded-3xl overflow-hidden border border-solid border-[#303238]"
-              aria-label="Día anterior"
-            >
-              <img
-                class="relative w-[22.83px] h-[21.75px]"
-                src="img/image.svg"
-                alt=""
-              />
-            </button>
-            <button
-              type="button"
-              class="date-option bg-white border-black flex h-[72px] items-center justify-center relative flex-1 grow rounded-xl overflow-hidden border border-solid appearance-none"
-              aria-pressed="false"
-            >
-              <span
-                class="relative w-fit [font-family:'Inter-Medium',Helvetica] font-medium text-[#1f1f1f] text-2xl tracking-[-0.12px] leading-8 whitespace-nowrap"
-                >28 OCT</span
-              >
-            </button>
-            <button
-              type="button"
-              class="date-option bg-[#a9474f] border-[#010101] flex h-[72px] items-center justify-center relative flex-1 grow rounded-xl overflow-hidden border border-solid appearance-none"
-              aria-pressed="true"
-            >
-              <span
-                class="relative w-fit [font-family:'Inter-Medium',Helvetica] font-medium text-[#f3f3f4] text-2xl tracking-[-0.12px] leading-8 whitespace-nowrap"
-                >29 OCT</span
-              >
-            </button>
-            <button
-              type="button"
-              class="date-option bg-white border-black flex h-[72px] items-center justify-center relative flex-1 grow rounded-xl overflow-hidden border border-solid appearance-none"
-              aria-pressed="false"
-            >
-              <span
-                class="relative w-fit [font-family:'Inter-Medium',Helvetica] font-medium text-[#1f1f1f] text-2xl tracking-[-0.12px] leading-8 whitespace-nowrap"
-                >30 OCT</span
-              >
-            </button>
-            <button
-              type="button"
-              class="date-option bg-white border-black flex h-[72px] items-center justify-center relative flex-1 grow rounded-xl overflow-hidden border border-solid appearance-none"
-              aria-pressed="false"
-            >
-              <span
-                class="relative w-fit [font-family:'Inter-Medium',Helvetica] font-medium text-[#1f1f1f] text-2xl tracking-[-0.12px] leading-8 whitespace-nowrap"
-                >01 NOV</span
-              >
-            </button>
-            <button
-              type="button"
-              class="flex w-10 h-10 items-center justify-center relative bg-[#a9474f] rounded-3xl overflow-hidden border border-solid border-[#303238]"
-              aria-label="Día siguiente"
-            >
-              <img
-                class="relative w-[22.83px] h-[21.75px]"
-                src="img/flecha.svg"
-                alt=""
-              />
-            </button>
+  <body class="bg-blancoroto font-body text-grisoscuro min-h-screen flex flex-col">
+    <header class="header-pelicula relative overflow-hidden text-blanco" aria-label="Información de la película">
+        <img src="img/cabecera-pelicula.png" alt="" class="header-img absolute inset-0 w-full h-full object-cover" />
+        <div class="relative z-10">
+        <div class="flex items-center justify-between gap-4 px-4 sm:px-8 pt-4">
+          <nav aria-label="Navegación principal" class="flex items-center gap-3">
+            <a href="index.html" aria-label="Ir al inicio" class="inline-flex text-blanco hover:opacity-80 transition"><svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/></svg></a>
+            <a href="sinopsis.html" aria-label="Volver" class="inline-flex text-blanco hover:opacity-80 transition"><svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5"/><path d="M12 19l-7-7 7-7"/></svg></a>
           </nav>
-        </section>
-        <section
-          class="absolute top-[525px] left-[136px] w-[1177px] h-[474px]"
-          aria-labelledby="schedule-heading"
-        >
-          <h2
-            id="schedule-heading"
-            class="absolute top-0 left-[376px] w-[409px] h-[59px] flex items-center justify-center [font-family:'Nunito-SemiBold',Helvetica] font-semibold text-black text-5xl text-center tracking-[0] leading-6"
-          >
-            Horarios
-          </h2>
-          <div role="group" aria-label="Horarios disponibles">
-            <button
-              type="button"
-              class="time-option top-[121px] left-0 absolute w-[255px] h-[159px] shadow-[0px_4px_4px_#00000040] appearance-none bg-transparent border-0 p-0"
-              aria-pressed="false"
-            >
-              <span
-                class="absolute top-0 left-0 w-[251px] h-[159px] bg-[#a6a6a6] rounded-[30px] border border-solid"
-              ></span>
-              <span
-                class="absolute top-[17px] left-[68px] w-[114px] h-[52px] flex items-center justify-center [-webkit-text-stroke:1px_#000000] [font-family:'Lato-ExtraLight',Helvetica] font-extralight text-black text-2xl text-center tracking-[0] leading-6"
-                >3D</span
-              >
-              <span
-                class="top-[52px] left-[60px] w-[130px] h-[86px] flex items-center justify-center [-webkit-text-stroke:1px_#000000] [font-family:'Lato-ExtraLight',Helvetica] font-extralight text-[#1f1f1f] text-[40px] leading-6 absolute text-center tracking-[0]"
-                >09:00</span
-              >
-            </button>
-            <button
-              type="button"
-              class="time-option top-[121px] left-[299px] absolute w-[255px] h-[159px] shadow-[0px_4px_4px_#00000040] appearance-none bg-transparent border-0 p-0"
-              aria-pressed="false"
-            >
-              <span
-                class="absolute top-0 left-0 w-[251px] h-[159px] bg-[#a6a6a6] rounded-[30px] border border-solid"
-              ></span>
-              <span
-                class="top-4 [font-family:'Lato-ExtraLight',Helvetica] font-extralight absolute left-[68px] w-[114px] h-[52px] flex items-center justify-center [-webkit-text-stroke:1px_#000000] text-black text-2xl text-center tracking-[0] leading-6"
-                >2D</span
-              >
-              <span
-                class="top-[51px] left-[60px] w-[130px] h-[86px] flex items-center justify-center [-webkit-text-stroke:1px_#000000] [font-family:'Lato-ExtraLight',Helvetica] font-extralight text-[#1f1f1f] text-[40px] leading-6 absolute text-center tracking-[0]"
-                >10:00</span
-              >
-            </button>
-            <button
-              type="button"
-              class="time-option top-[121px] left-[616px] absolute w-[255px] h-[159px] shadow-[0px_4px_4px_#00000040] appearance-none bg-transparent border-0 p-0"
-              aria-pressed="false"
-            >
-              <span
-                class="absolute top-0 left-0 w-[251px] h-[159px] bg-[#a6a6a6] rounded-[30px] border border-solid"
-              ></span>
-              <span
-                class="absolute top-[13px] left-[68px] w-[114px] h-[52px] flex items-center justify-center [-webkit-text-stroke:1px_#000000] [font-family:'Lato-ExtraLight',Helvetica] font-extralight text-black text-2xl text-center tracking-[0] leading-6"
-                >2D</span
-              >
-              <span
-                class="top-12 left-[60px] w-[130px] h-[86px] flex items-center justify-center [-webkit-text-stroke:1px_#000000] [font-family:'Lato-ExtraLight',Helvetica] font-extralight text-black text-[40px] leading-6 absolute text-center tracking-[0]"
-                >14:00</span
-              >
-            </button>
-            <button
-              type="button"
-              class="time-option top-[121px] left-[924px] absolute w-[255px] h-[159px] shadow-[0px_4px_4px_#00000040] appearance-none bg-transparent border-0 p-0"
-              aria-pressed="false"
-            >
-              <span
-                class="absolute top-0 left-0 w-[251px] h-[159px] bg-[#a6a6a6] rounded-[30px] border border-solid"
-              ></span>
-              <span
-                class="absolute top-[13px] left-[68px] w-[114px] h-[52px] flex items-center justify-center [-webkit-text-stroke:1px_#000000] [font-family:'Lato-ExtraLight',Helvetica] font-extralight text-black text-2xl text-center tracking-[0] leading-6"
-                >2D</span
-              >
-              <span
-                class="absolute top-12 left-[60px] w-[130px] h-[86px] flex items-center justify-center [-webkit-text-stroke:1px_#000000] [font-family:'Lato-ExtraLight',Helvetica] font-extralight text-[#1f1f1f] text-[40px] text-center tracking-[0] leading-6"
-                >15:00</span
-              >
-            </button>
-            <button
-              type="button"
-              class="time-option top-[315px] left-0 absolute w-[255px] h-[159px] shadow-[0px_4px_4px_#00000040] appearance-none bg-transparent border-0 p-0"
-              aria-pressed="true"
-            >
-              <span
-                class="absolute top-0 left-0 w-[251px] h-[159px] bg-[#a9474f] rounded-[30px] border border-solid border-black"
-              ></span>
-              <span
-                class="top-[13px] [font-family:'Lato-Light',Helvetica] font-light absolute left-[68px] w-[114px] h-[52px] flex items-center justify-center [-webkit-text-stroke:1px_#000000] text-black text-2xl text-center tracking-[0] leading-6"
-                >2D</span
-              >
-              <span
-                class="top-[79px] left-[60px] w-[130px] h-6 flex items-center justify-center [-webkit-text-stroke:1px_#000000] [font-family:'Lato-Light',Helvetica] font-light text-[#1f1f1f] text-[40px] leading-6 absolute text-center tracking-[0]"
-                >16:00</span
-              >
-            </button>
-            <button
-              type="button"
-              class="time-option top-[315px] left-[308px] absolute w-[255px] h-[159px] shadow-[0px_4px_4px_#00000040] appearance-none bg-transparent border-0 p-0"
-              aria-pressed="false"
-            >
-              <span
-                class="absolute top-0 left-0 w-[251px] h-[159px] bg-[#a6a6a6] rounded-[30px] border border-solid"
-              ></span>
-              <span
-                class="absolute top-[13px] left-[68px] w-[114px] h-[52px] flex items-center justify-center [-webkit-text-stroke:1px_#000000] [font-family:'Lato-ExtraLight',Helvetica] font-extralight text-black text-2xl text-center tracking-[0] leading-6"
-                >2D</span
-              >
-              <span
-                class="absolute top-12 left-[60px] w-[130px] h-[86px] flex items-center justify-center [-webkit-text-stroke:1px_#000000] [font-family:'Lato-ExtraLight',Helvetica] font-extralight text-[#1f1f1f] text-[40px] text-center tracking-[0] leading-6"
-                >20:00</span
-              >
-            </button>
-            <button
-              type="button"
-              class="time-option top-[315px] left-[616px] absolute w-[255px] h-[159px] shadow-[0px_4px_4px_#00000040] appearance-none bg-transparent border-0 p-0"
-              aria-pressed="false"
-            >
-              <span
-                class="absolute top-0 left-0 w-[251px] h-[159px] bg-[#a6a6a6] rounded-[30px] border border-solid"
-              ></span>
-              <span
-                class="absolute top-[13px] left-[68px] w-[114px] h-[52px] flex items-center justify-center [-webkit-text-stroke:1px_#000000] [font-family:'Lato-ExtraLight',Helvetica] font-extralight text-black text-2xl text-center tracking-[0] leading-6"
-                >2D</span
-              >
-              <span
-                class="absolute top-12 left-[60px] w-[130px] h-[86px] flex items-center justify-center [-webkit-text-stroke:1px_#000000] [font-family:'Lato-ExtraLight',Helvetica] font-extralight text-[#1f1f1f] text-[40px] text-center tracking-[0] leading-6"
-                >22:00</span
-              >
-            </button>
-            <button
-              type="button"
-              class="time-option top-[315px] left-[924px] absolute w-[255px] h-[159px] shadow-[0px_4px_4px_#00000040] appearance-none bg-transparent border-0 p-0"
-              aria-pressed="false"
-            >
-              <span
-                class="absolute top-0 left-0 w-[251px] h-[159px] bg-[#a6a6a6] rounded-[30px] border border-solid"
-              ></span>
-              <span
-                class="absolute top-[13px] left-[68px] w-[114px] h-[52px] flex items-center justify-center [-webkit-text-stroke:1px_#000000] [font-family:'Lato-ExtraLight',Helvetica] font-extralight text-black text-2xl text-center tracking-[0] leading-6"
-                >2D</span
-              >
-              <span
-                class="top-12 left-[60px] w-[130px] h-[86px] [-webkit-text-stroke:1px_#000000] [font-family:'Lato-ExtraLight',Helvetica] font-extralight text-transparent text-[40px] leading-6 absolute text-center tracking-[0]"
-              >
-                <span class="text-black">23:</span
-                ><span class="text-[#1f1f1f]">00</span>
-              </span>
-            </button>
-          </div>
-        </section>
-        <div
-          class="flex flex-col w-[1328px] h-[23px] items-start justify-center absolute top-[589px] left-[67px]"
-          role="separator"
-          aria-hidden="true"
-        >
-          <img
-            class="relative self-stretch w-full h-px object-cover"
-            src="img/divider.svg"
-            alt=""
-          />
+          <nav aria-label="Cuenta de usuario" class="flex items-center gap-3">
+            <a href="perfilUsuari.html" aria-label="Perfil de usuario" class="inline-flex"><span class="grid place-items-center w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-rojooscuro text-blanco border border-grisclaro">
+              <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+            </span></a>
+            <a href="Login.html" aria-label="Cerrar sesión" class="inline-flex text-blanco hover:opacity-80 transition"><svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><path d="M16 17l5-5-5-5"/><path d="M21 12H9"/></svg></a>
+          </nav>
         </div>
-      </main>
-    </div>
-    <!-- <script>
-        // GENERADO POR ANIMA PARA PASAR DE FIGMA A HTML-TAILWIND
-      document.querySelectorAll(".date-option").forEach(function (option) {
-        option.addEventListener("click", function () {
-          document.querySelectorAll(".date-option").forEach(function (item) {
-            item.setAttribute("aria-pressed", "false");
-            item.classList.remove("bg-[#a9474f]", "border-[#010101]");
-            item.classList.add("bg-white", "border-black");
-            item.querySelector("span").classList.remove("text-[#f3f3f4]");
-            item.querySelector("span").classList.add("text-[#1f1f1f]");
-          });
-
-          option.setAttribute("aria-pressed", "true");
-          option.classList.remove("bg-white", "border-black");
-          option.classList.add("bg-[#a9474f]", "border-[#010101]");
-          option.querySelector("span").classList.remove("text-[#1f1f1f]");
-          option.querySelector("span").classList.add("text-[#f3f3f4]");
-        });
-      });
-
-      document.querySelectorAll(".time-option").forEach(function (option) {
-        option.addEventListener("click", function () {
-          document.querySelectorAll(".time-option").forEach(function (item) {
-            item.setAttribute("aria-pressed", "false");
-          });
-          option.setAttribute("aria-pressed", "true");
-        });
-      });
-    </script> -->
+        <div class="px-4 pt-6 pb-8 sm:pb-10 text-center">
+          <h1 class="font-ui text-subheading font-medium">Hasta el horizonte</h1>
+          <p class="mt-1 flex flex-wrap justify-center items-center gap-2 text-small">
+            <span>159 min</span><span aria-hidden="true">|</span><span>Acción, Drama</span>
+          </p>
+        </div>
+        </div>
+      </header>
+    <main class="flex-1 mx-auto w-full max-w-[980px] px-4 sm:px-8 py-8">
+      <section aria-labelledby="date-heading" class="rounded-xl border border-grisclaro bg-blancoroto p-4">
+        <div class="flex justify-between text-caption"><h2 id="date-heading">Elije el Día</h2><p>4 sesiones</p></div>
+        <nav aria-label="Seleccionar fecha" class="mt-3 flex items-center gap-2">
+          <button type="button" aria-label="Día anterior" class="grid place-items-center w-7 h-7 shrink-0 rounded-full bg-rojosuave text-blanco"><svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg></button>
+          <div class="flex flex-1 gap-3 overflow-x-auto">
+            <button type="button" aria-pressed="false" class="flex-1 min-w-[90px] py-2 rounded-md border text-small bg-blanco hover:bg-grismuyclaro border-grisclaro transition">28 OCT</button>
+            <button type="button" aria-pressed="true" class="flex-1 min-w-[90px] py-2 rounded-md border text-small bg-rojosuave text-blanco border-rojosuave transition">29 OCT</button>
+            <button type="button" aria-pressed="false" class="flex-1 min-w-[90px] py-2 rounded-md border text-small bg-blanco hover:bg-grismuyclaro border-grisclaro transition">30 OCT</button>
+            <button type="button" aria-pressed="false" class="flex-1 min-w-[90px] py-2 rounded-md border text-small bg-blanco hover:bg-grismuyclaro border-grisclaro transition">01 NOV</button>
+            </div>
+          <button type="button" aria-label="Día siguiente" class="grid place-items-center w-7 h-7 shrink-0 rounded-full bg-rojosuave text-blanco"><svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg></button>
+        </nav>
+      </section>
+      <section aria-labelledby="times-heading" class="mt-8">
+        <h2 id="times-heading" class="font-heading font-semibold text-heading text-center pb-3 border-b border-grismuyclaro">Horarios</h2>
+        <div class="mt-6 grid grid-cols-2 md:grid-cols-4 gap-4 max-w-[760px] mx-auto">
+          <a href="selecioSeients.html" aria-pressed="false" class="flex flex-col items-center py-3 rounded-xl border bg-grisclaro hover:bg-grismuyclaro border-transparent transition"><span class="text-caption font-semibold">3D</span><span class="font-body text-heading">09:00</span></a>
+          <a href="selecioSeients.html" aria-pressed="false" class="flex flex-col items-center py-3 rounded-xl border bg-grisclaro hover:bg-grismuyclaro border-transparent transition"><span class="text-caption font-semibold">2D</span><span class="font-body text-heading">10:00</span></a>
+          <a href="selecioSeients.html" aria-pressed="false" class="flex flex-col items-center py-3 rounded-xl border bg-grisclaro hover:bg-grismuyclaro border-transparent transition"><span class="text-caption font-semibold">2D</span><span class="font-body text-heading">14:00</span></a>
+          <a href="selecioSeients.html" aria-pressed="false" class="flex flex-col items-center py-3 rounded-xl border bg-grisclaro hover:bg-grismuyclaro border-transparent transition"><span class="text-caption font-semibold">2D</span><span class="font-body text-heading">15:00</span></a>
+          <a href="selecioSeients.html" aria-pressed="true" class="flex flex-col items-center py-3 rounded-xl border bg-rojosuave text-blanco border-grisoscuro transition"><span class="text-caption font-semibold">2D</span><span class="font-body text-heading">16:00</span></a>
+          <a href="selecioSeients.html" aria-pressed="false" class="flex flex-col items-center py-3 rounded-xl border bg-grisclaro hover:bg-grismuyclaro border-transparent transition"><span class="text-caption font-semibold">2D</span><span class="font-body text-heading">20:00</span></a>
+          <a href="selecioSeients.html" aria-pressed="false" class="flex flex-col items-center py-3 rounded-xl border bg-grisclaro hover:bg-grismuyclaro border-transparent transition"><span class="text-caption font-semibold">2D</span><span class="font-body text-heading">22:00</span></a>
+          <a href="selecioSeients.html" aria-pressed="false" class="flex flex-col items-center py-3 rounded-xl border bg-grisclaro hover:bg-grismuyclaro border-transparent transition"><span class="text-caption font-semibold">2D</span><span class="font-body text-heading">23:00</span></a>
+          </div>
+      </section>
+    </main>
+    <footer class="bg-rojosuave text-blanco font-subheading text-small sm:text-subheading px-6 sm:px-[72px] py-4 mt-auto">
+      Todos los derechos reservados
+    </footer>
   </body>
 </html>
