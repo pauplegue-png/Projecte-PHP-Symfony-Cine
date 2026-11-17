@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<meta name="description" content="Error interno del servidor">
+<title>Error interno del servidor</title>
+<link rel="stylesheet" href="globals.css">
+<link rel="stylesheet" href="styleguide.css">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+/** @type {import('tailwindcss').Config} */
+    tailwind.config = {
+      corePlugins: {
+        preflight: false
+      },
+      theme: {
+        extend: {
+          colors: {
+            "colors-asientos-adaptado": "var(--colors-asientos-adaptado)",
+            "colors-asientos-libre": "var(--colors-asientos-libre)",
+            "colors-asientos-ocupado": "var(--colors-asientos-ocupado)",
+            "colors-asientos-premium": "var(--colors-asientos-premium)",
+            "colors-asientos-seleccionado": "var(--colors-asientos-seleccionado)",
+            "colors-neutros-blanco": "var(--colors-neutros-blanco)",
+            "colors-neutros-blancoroto": "var(--colors-neutros-blancoroto)",
+            "colors-neutros-grisclaro": "var(--colors-neutros-grisclaro)",
+            "colors-neutros-grismedio": "var(--colors-neutros-grismedio)",
+            "colors-neutros-grismediooscuro": "var(--colors-neutros-grismediooscuro)",
+            "colors-neutros-grismuyclaro": "var(--colors-neutros-grismuyclaro)",
+            "colors-neutros-grisoscuro": "var(--colors-neutros-grisoscuro)",
+            "colors-principales-rojoactivo": "var(--colors-principales-rojoactivo)",
+            "colors-principales-rojohover": "var(--colors-principales-rojohover)",
+            "colors-principales-rojooscuro": "var(--colors-principales-rojooscuro)",
+            "colors-principales-rojosuave": "var(--colors-principales-rojosuave)",
+            "colors-semanticos-aviso": "var(--colors-semanticos-aviso)",
+            "colors-semanticos-error": "var(--colors-semanticos-error)",
+            "colors-semanticos-exito": "var(--colors-semanticos-exito)",
+            "colors-semanticos-informacion": "var(--colors-semanticos-informacion)"
+          }
+        }
+      },
+      plugins: []
+    };
+  </script>
+</head>
+<body>
+<div class="bg-gray-50 border border-solid border-black w-full min-w-[1440px] min-h-[1024px] flex">
+<main class="flex w-[1440px] h-[1024px] relative flex-col items-center justify-center p-16">
+<section
+        class="flex flex-col w-[640px] items-start gap-8 p-12 relative flex-[0_0_auto] bg-white rounded-xl border border-solid border shadow-[0px_4px_12px_#0000000d]"
+        aria-labelledby="server-error-title"
+        aria-describedby="server-error-description"
+      >
+<header class="flex flex-col items-center gap-4 relative self-stretch w-full flex-[0_0_auto] bg-transparent">
+<p
+            class="relative w-fit mt-[-1.00px] [font-family:'Inter-Bold',Helvetica] font-bold text-gray-900 text-8xl tracking-[-3.84px] leading-[normal]"
+            aria-hidden="true"
+          >
+500
+          </p>
+<h1
+            id="server-error-title"
+            class="relative w-fit [font-family:'Nunito-SemiBold',Helvetica] font-semibold text-gray-900 text-[32px] text-center tracking-[0] leading-[normal]"
+          >
+Error interno del servidor
+          </h1>
+</header>
+<p
+          id="server-error-description"
+          class="relative self-stretch [font-family:'Lato-Regular',Helvetica] font-normal text-gray-500 text-lg text-center tracking-[0] leading-[27px]"
+        >
+Lo sentimos, algo salió mal en nuestro servidor. Nuestro equipo ya está trabajando para solucionarlo.
+        </p>
+<nav
+          class="flex items-start justify-center gap-4 relative self-stretch w-full flex-[0_0_auto]"
+          aria-label="Acciones de error"
+        >
+<button
+            type="button"
+            id="retry-button"
+            class="bg-gray-900 inline-flex items-center justify-center px-6 py-3 relative flex-[0_0_auto] rounded-lg"
+          >
+<span
+              class="relative w-fit mt-[-1.00px] [font-family:'Lato-SemiBold',Helvetica] font-semibold text-white text-base tracking-[0] leading-[normal] whitespace-nowrap"
+            >
+Reintentar
+            </span>
+</button>
+<a
+            href="/"
+            class="bg-white border border-solid border-gray-300 inline-flex items-center justify-center px-6 py-3 relative flex-[0_0_auto] rounded-lg"
+          >
+<span
+              class="relative w-fit mt-[-1.00px] [font-family:'Lato-SemiBold',Helvetica] font-semibold text-gray-700 text-base tracking-[0] leading-[normal] whitespace-nowrap"
+            >
+Volver al inicio
+            </span>
+</a>
+</nav>
+</section>
+</main>
+</div>
+<script>
+document.getElementById("retry-button").addEventListener("click", function () {
+      window.location.reload();
+    });
+  </script>
+</body>
+</html>

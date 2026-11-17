@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<meta name="description" content="Crea tu cuenta del Cine y disfruta de descuentos y ventajas exclusivas">
+<title>Crear Cuenta | Cine</title>
+<link rel="stylesheet" href="globals.css">
+<link rel="stylesheet" href="styleguide.css">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+/** @type {import('tailwindcss').Config} */
+    tailwind.config = {
+      corePlugins: {
+        preflight: false
+      },
+      theme: {
+        extend: {
+          colors: {
+            "colors-asientos-adaptado": "var(--colors-asientos-adaptado)",
+            "colors-asientos-libre": "var(--colors-asientos-libre)",
+            "colors-asientos-ocupado": "var(--colors-asientos-ocupado)",
+            "colors-asientos-premium": "var(--colors-asientos-premium)",
+            "colors-asientos-seleccionado": "var(--colors-asientos-seleccionado)",
+            "colors-neutros-blanco": "var(--colors-neutros-blanco)",
+            "colors-neutros-blancoroto": "var(--colors-neutros-blancoroto)",
+            "colors-neutros-grisclaro": "var(--colors-neutros-grisclaro)",
+            "colors-neutros-grismedio": "var(--colors-neutros-grismedio)",
+            "colors-neutros-grismediooscuro": "var(--colors-neutros-grismediooscuro)",
+            "colors-neutros-grismuyclaro": "var(--colors-neutros-grismuyclaro)",
+            "colors-neutros-grisoscuro": "var(--colors-neutros-grisoscuro)",
+            "colors-principales-rojoactivo": "var(--colors-principales-rojoactivo)",
+            "colors-principales-rojohover": "var(--colors-principales-rojohover)",
+            "colors-principales-rojooscuro": "var(--colors-principales-rojooscuro)",
+            "colors-principales-rojosuave": "var(--colors-principales-rojosuave)",
+            "colors-semanticos-aviso": "var(--colors-semanticos-aviso)",
+            "colors-semanticos-error": "var(--colors-semanticos-error)",
+            "colors-semanticos-exito": "var(--colors-semanticos-exito)",
+            "colors-semanticos-informacion": "var(--colors-semanticos-informacion)"
+          }
+        }
+      },
+      plugins: []
+    };
+  </script>
+</head>
+<body>
+<div class="bg-white w-full min-w-[1440px] min-h-[1024px] flex">
+<aside
+      class="flex w-[600px] h-[1024px] relative flex-col items-start justify-center px-20 py-[120px] [background:linear-gradient(117deg,rgba(185,28,28,1)_21%,rgba(215,69,25,1)_52%,rgba(249,115,22,1)_88%)]"
+      aria-labelledby="benefits-title"
+    >
+<div class="flex-col items-start gap-3 self-stretch w-full flex-[0_0_auto] flex relative">
+<h1
+          id="benefits-title"
+          class="relative self-stretch mt-[-1.00px] [font-family:'Nunito-Regular',Helvetica] font-normal text-red-200 text-[44px] tracking-[0] leading-[normal]"
+        >
+Unete a la familia
+        </h1>
+<p class="relative self-stretch [font-family:'Lato-Regular',Helvetica] font-normal text-red-200 text-[17px] tracking-[0] leading-[normal]">
+<span class="[font-family:'Lato-Regular',Helvetica] font-normal text-red-200 text-[17px] tracking-[0]">
+Desbloquea ventajas y descuentos exclusivos<br>
+</span>
+</p>
+</div>
+<ul class="flex-col items-start gap-3.5 self-stretch w-full flex-[0_0_auto] flex relative">
+<li class="flex items-center gap-3 relative self-stretch w-full flex-[0_0_auto]">
+<span class="flex-col w-7 h-7 items-center justify-center bg-white rounded-lg border border-solid border-red-200 flex relative" aria-hidden="true">
+<span class="relative w-3.5 h-3.5">
+<img class="absolute w-[90.47%] h-[82.14%] top-[17.86%] left-[9.53%]" src="img/vector-4.svg" alt="">
+</span>
+</span>
+<span class="relative w-fit [font-family:'Lato-Regular',Helvetica] font-normal text-red-200 text-sm tracking-[0] leading-[normal]">
+Descuentos exclusivos cada semana
+          </span>
+</li>
+<li class="flex items-center gap-3 relative self-stretch w-full flex-[0_0_auto]">
+<span class="flex-col w-7 h-7 items-center justify-center bg-white rounded-lg border border-solid border-red-200 flex relative" aria-hidden="true">
+<span class="relative w-3.5 h-3.5">
+<img class="absolute w-[90.47%] h-[82.14%] top-[17.86%] left-[9.53%]" src="img/image.svg" alt="">
+</span>
+</span>
+<span class="relative w-fit [font-family:'Lato-Regular',Helvetica] font-normal text-red-200 text-sm tracking-[0] leading-[normal]">
+Ofertas personalizadas per a ti
+          </span>
+</li>
+<li class="flex items-center gap-3 relative self-stretch w-full flex-[0_0_auto]">
+<span class="flex-col w-7 h-7 items-center justify-center bg-white rounded-lg border border-solid border-red-200 flex relative" aria-hidden="true">
+<span class="relative w-3.5 h-3.5">
+<img class="absolute w-[90.47%] h-[82.14%] top-[17.86%] left-[9.53%]" src="img/vector-2.svg" alt="">
+</span>
+</span>
+<span class="relative w-fit [font-family:'Lato-Regular',Helvetica] font-normal text-red-200 text-sm tracking-[0] leading-[normal]">
+Acceso rápido y seguro a tu cuenta
+          </span>
+</li>
+</ul>
+</aside>
+<main class="flex w-[840px] h-[1024px] relative flex-col items-center justify-center p-20 bg-white border border-solid border">
+<form
+        class="flex flex-col w-[586px] h-[770px] items-start gap-8 p-14 relative bg-white rounded-2xl border border-solid border shadow-[0px_4px_16px_#0000000d,0px_1px_4px_#00000008]"
+        action="#"
+        method="post"
+        aria-labelledby="create-account-title"
+      >
+<header class="flex-col items-start gap-2 self-stretch w-full flex-[0_0_auto] flex relative">
+<h2
+            id="create-account-title"
+            class="relative self-stretch mt-[-1.00px] [font-family:'Nunito-Regular',Helvetica] font-normal text-gray-900 text-3xl tracking-[0] leading-[normal]"
+          >
+Crear Cuenta
+          </h2>
+<p class="relative self-stretch [font-family:'Lato-Regular',Helvetica] font-normal text-gray-500 text-[15px] tracking-[0] leading-[normal]">
+Registrate en el Cine
+          </p>
+</header>
+<div class="relative self-stretch w-full h-px bg-gray-100" aria-hidden="true"></div>
+<fieldset class="flex-col items-start gap-5 self-stretch w-full flex-[0_0_auto] flex relative">
+<legend class="sr-only">Datos de registro</legend>
+<div class="flex-col items-start gap-2 self-stretch w-full flex-[0_0_auto] flex relative">
+<label
+              for="email"
+              class="relative w-fit mt-[-1.00px] [font-family:'Nunito-Regular',Helvetica] font-normal text-gray-700 text-sm tracking-[0] leading-[normal]"
+            >
+Correo Electrónico
+            </label>
+<div class="flex h-[52px] items-center gap-3 px-4 py-0 relative self-stretch w-full bg-gray-50 rounded-xl border border-solid border">
+<span class="relative w-[18px] h-[18px]" aria-hidden="true">
+<img class="absolute w-[97.23%] h-[88.89%] top-[11.11%] left-[2.77%]" src="img/vector-5.svg" alt="">
+</span>
+<input
+                id="email"
+                name="email"
+                type="email"
+                autocomplete="email"
+                placeholder="exemple@correu.com"
+                required
+                class="relative flex-1 min-w-0 bg-transparent border-0 outline-none [font-family:'Lato-Regular',Helvetica] font-normal text-gray-500 text-[15px] tracking-[0] leading-[normal] whitespace-nowrap"
+                aria-required="true"
+              >
+</div>
+</div>
+<div class="flex-col items-start gap-2 self-stretch w-full flex-[0_0_auto] flex relative">
+<div class="items-center justify-around self-stretch w-full flex-[0_0_auto] flex relative">
+<label
+                for="password"
+                class="relative w-fit mt-[-1.00px] [font-family:'Nunito-Regular',Helvetica] font-normal text-gray-700 text-sm tracking-[0] leading-[normal]"
+              >
+Contraseña
+              </label>
+</div>
+<div class="flex h-[52px] items-center gap-3 px-4 py-0 relative self-stretch w-full bg-gray-50 rounded-xl border border-solid border">
+<span class="relative w-[18px] h-[18px]" aria-hidden="true">
+<img class="absolute w-[93.06%] h-[97.22%] top-[2.78%] left-[6.94%]" src="img/vector-6.svg" alt="">
+</span>
+<input
+                id="password"
+                name="password"
+                type="password"
+                autocomplete="new-password"
+                placeholder="••••••••"
+                minlength="8"
+                required
+                class="relative flex-1 min-w-0 bg-transparent border-0 outline-none [font-family:'Inter-Regular',Helvetica] font-normal text-gray-500 text-[15px] tracking-[0] leading-[normal]"
+                aria-required="true"
+              >
+<button
+                type="button"
+                class="relative w-[18px] h-[18px] bg-transparent border-0 p-0 cursor-pointer"
+                aria-label="Mostrar contraseña"
+                aria-controls="password"
+                aria-pressed="false"
+              >
+<img class="absolute w-[97.22%] h-[84.72%] top-[15.28%] left-[2.78%]" src="img/vector-8.svg" alt="">
+</button>
+</div>
+</div>
+<label class="items-center gap-2.5 self-stretch w-full flex-[0_0_auto] flex relative cursor-pointer">
+<span class="flex-col w-5 h-5 items-center justify-center bg-gray-300 rounded-[5px] flex relative" aria-hidden="true">
+<input
+                id="terms"
+                name="terms"
+                type="checkbox"
+                required
+                class="sr-only"
+                aria-required="true"
+              >
+<span class="relative w-3 h-3">
+<img class="absolute w-[91.66%] h-[83.33%] top-[16.67%] left-[8.34%]" src="img/vector.svg" alt="">
+</span>
+</span>
+<span class="relative w-fit [font-family:'Lato-Regular',Helvetica] font-normal text-gray-500 text-sm tracking-[0] leading-[normal]">
+Acceptar terminos y condiciones
+            </span>
+</label>
+</fieldset>
+<button
+          type="submit"
+          class="flex w-[474px] h-[54px] items-center justify-center gap-2.5 relative rounded-[14px] shadow-[0px_6px_20px_#b91c1c59] [background:linear-gradient(90deg,rgba(185,28,28,1)_19%,rgba(216,70,25,1)_66%,rgba(249,115,22,1)_100%)] cursor-pointer"
+        >
+<span class="relative w-fit [font-family:'Nunito-Bold',Helvetica] font-bold text-white text-base tracking-[0.30px] leading-[normal]">
+Registrar-se
+          </span>
+<span class="relative w-[18px] h-[18px]" aria-hidden="true">
+<img class="absolute w-[84.72%] h-[84.72%] top-[15.28%] left-[15.28%]" src="img/vector-7.svg" alt="">
+</span>
+</button>
+<div class="items-center gap-4 self-stretch w-full flex-[0_0_auto] flex relative" aria-hidden="true">
+<div class="relative flex-1 grow h-px bg-gray-200"></div>
+<span class="relative w-fit mt-[-1.00px] [font-family:'Inter-Regular',Helvetica] font-normal text-gray-400 text-xs tracking-[0] leading-[normal]">O</span>
+<div class="relative flex-1 grow h-px bg-gray-200"></div>
+</div>
+<button
+          type="button"
+          class="h-12 items-center justify-center gap-2 flex-1 grow bg-white rounded-xl border border-solid border flex relative cursor-pointer"
+          aria-label="Registrarse con Google"
+        >
+<span class="relative w-5 h-5" aria-hidden="true">
+<img class="absolute w-[96.67%] h-[96.67%] top-[3.33%] left-[3.33%]" src="img/vector-3.svg" alt="">
+</span>
+<span class="relative w-fit [font-family:'Lato-Regular',Helvetica] font-normal text-gray-700 text-sm tracking-[0] leading-[normal]">
+Google
+          </span>
+</button>
+<p class="items-start justify-center gap-1 self-stretch w-full flex-[0_0_auto] flex relative">
+<span class="relative w-fit mt-[-1.00px] [font-family:'Lato-Regular',Helvetica] font-normal text-gray-500 text-sm tracking-[0] leading-[normal]">
+Ya tienes cuenta
+          </span>
+<a
+            href="#login"
+            class="relative w-fit mt-[-1.00px] [font-family:'Lato-Regular',Helvetica] font-normal text-gray-700 text-sm tracking-[0] leading-[normal]"
+          >
+Inicia session
+          </a>
+</p>
+</form>
+</main>
+</div>
+</body>
+</html>
