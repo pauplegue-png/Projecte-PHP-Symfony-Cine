@@ -3,195 +3,104 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Selección de asientos | Hasta el horizonte</title>
+    <title>Selección de asientos</title>
     <link rel="stylesheet" href="css/colors.css" />
     <link rel="stylesheet" href="fonts/typography.css" />
     <link rel="stylesheet" href="fonts/sizes.css" />
     <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/headers.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="js/tailwind-config.js"></script>
   </head>
-  <body>
-    <div
-      class="bg-[#f5f2f0] overflow-hidden border border-solid border-black w-full min-w-[1440px] min-h-[1295px] flex flex-col gap-[58px]"
-      data-color-scheme-mode="light"
-    >
-      <header
-        class="-ml-px w-[1450px] relative bg-transparent"
-        aria-label="Información de la película"
-      >
-        <div
-          class="flex flex-col w-[1440px] h-[232px] items-center justify-center pl-[117px] pr-0.5 py-0 absolute top-0 left-0 bg-color-scheme-grays-black overflow-hidden opacity-[0.88]"
-          aria-hidden="true"
-        >
-          <img
-            class="relative w-[1563px] h-[232px] mt-[-329.00px] ml-[-121.00px] mr-[-121.00px] z-[1]"
-            src="img/rectangle-1.png"
-            alt=""
-          />
-          <img
-            class="relative w-[1439px] h-[232px] ml-[-116.00px] mr-[-2.00px] z-0 aspect-[2.38] object-cover"
-            src="img/img.png"
-            alt=""
-          />
+  <body class="bg-blancoroto font-body text-grisoscuro min-h-screen flex flex-col">
+    <header class="header-pelicula relative overflow-hidden text-blanco" aria-label="Información de la película">
+        <img src="img/cabecera-pelicula.png" alt="" class="header-img absolute inset-0 w-full h-full object-cover" />
+        <div class="relative z-10">
+        <div class="flex items-center justify-between gap-4 px-4 sm:px-8 pt-4">
+          <nav aria-label="Navegación principal" class="flex items-center gap-3">
+            <a href="index.html" aria-label="Ir al inicio" class="inline-flex text-blanco hover:opacity-80 transition"><svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/></svg></a>
+            <a href="escojerHoraSesion.html" aria-label="Volver" class="inline-flex text-blanco hover:opacity-80 transition"><svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5"/><path d="M12 19l-7-7 7-7"/></svg></a>
+          </nav>
+          <nav aria-label="Cuenta de usuario" class="flex items-center gap-3">
+            <a href="perfilUsuari.html" aria-label="Perfil de usuario" class="inline-flex"><span class="grid place-items-center w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-rojooscuro text-blanco border border-grisclaro">
+              <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+            </span></a>
+            <a href="Login.html" aria-label="Cerrar sesión" class="inline-flex text-blanco hover:opacity-80 transition"><svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><path d="M16 17l5-5-5-5"/><path d="M21 12H9"/></svg></a>
+          </nav>
         </div>
-        <nav aria-label="Navegación principal">
-          <button
-            type="button"
-            class="absolute top-[26px] left-[1355px] w-[46px] h-[53px] flex bg-transparent border-0 p-0"
-            aria-label="Cerrar sesión"
-          >
-            <img class="flex-1 w-[38.5px]" src="img/icon.svg" alt="" />
-          </button>
-          <button
-            type="button"
-            class="absolute top-[29px] left-[94px] w-[45px] h-[47px] flex bg-transparent border-0 p-0"
-            aria-label="Volver"
-          >
-            <img class="flex-1 w-[30px]" src="img/image.svg" alt="" />
-          </button>
-          <button
-            type="button"
-            class="absolute top-[31px] left-[34px] w-[43px] h-[43px] bg-transparent border-0 p-0"
-            aria-label="Inicio"
-          >
-            <img class="w-[43px] h-[43px]" src="img/home.svg" alt="" />
-          </button>
-          <button
-            type="button"
-            class="absolute top-[23px] left-[1273px] w-[61px] h-[58px] flex bg-[#a9474f] rounded-[100px] overflow-hidden border border-solid border-[#a6a6a6] p-0"
-            aria-label="Perfil de usuario"
-          >
-            <img
-              class="flex-1 w-[42.98px]"
-              src="img/avatar-placeholder.svg"
-              alt=""
-            />
-          </button>
-        </nav>
-        <p
-          class="absolute top-[147px] left-[517px] w-[142px] h-14 flex items-center justify-center [font-family:'Roboto-Regular',Helvetica] font-normal text-[#f8c026] text-2xl text-center tracking-[0] leading-[normal]"
-        >
-          M-12
-        </p>
-        <h1
-          class="absolute top-[82px] left-[484px] w-[490px] h-[75px] flex items-center justify-center [font-family:'Roboto-Regular',Helvetica] font-normal text-white text-[32px] text-center tracking-[0] leading-[normal]"
-        >
-          Hasta el horizonte
-        </h1>
-        <p
-          class="absolute top-[158px] left-[729px] w-[201px] h-[35px] flex items-center justify-center [font-family:'Roboto-Regular',Helvetica] font-normal text-white text-2xl text-center tracking-[0] leading-[normal]"
-        >
-          Accion, Drama
-        </p>
-        <p
-          class="absolute top-[149px] left-[616px] w-[119px] h-[52px] flex items-center justify-center [font-family:'Roboto-Regular',Helvetica] font-normal text-white text-2xl text-center tracking-[0] leading-[normal]"
-        >
-          159 min
-        </p>
-        <span
-          class="absolute top-[150px] left-[675px] w-[119px] h-[52px] flex items-center justify-center [font-family:'Inter-Regular',Helvetica] font-normal text-white text-2xl text-center tracking-[0] leading-[normal]"
-          aria-hidden="true"
-        >
-          |
-        </span>
+        <div class="px-4 pt-6 pb-8 sm:pb-10 text-center">
+          <h1 class="font-ui text-subheading font-medium">Hasta el horizonte</h1>
+          <p class="mt-1 flex flex-wrap justify-center items-center gap-2 text-small">
+            <span class="text-amarillo font-semibold">M-12</span><span>159 min</span><span aria-hidden="true">|</span><span>Acción, Drama</span>
+          </p>
+        </div>
+        </div>
       </header>
-      <main class="ml-[107px] w-[1258px] h-[940px] relative">
-        <h2
-          class="absolute top-0 left-[361px] w-[504px] h-[97px] flex items-center justify-center [font-family:'Nunito-SemiBold',Helvetica] font-semibold text-black text-5xl text-center tracking-[0] leading-[normal]"
-        >
-          Selecion de asientos
-        </h2>
-        <section
-          class="absolute top-[133px] left-0 w-[1248px] h-[571px] bg-white border border-solid border-black"
-          aria-labelledby="screen-heading"
-        >
-          <h3
-            id="screen-heading"
-            class="absolute top-[36px] left-[301px] w-[596px] h-[53px] flex items-center justify-center [font-family:'Lato-Medium',Helvetica] font-medium text-black text-[32px] text-center tracking-[0] leading-[normal]"
-          >
-            Pantalla
-          </h3>
-          <div
-            class="absolute top-[89px] left-[116px] w-[1016px] h-[49px] bg-[#7f7d7d] rounded-[40px]"
-            role="img"
-            aria-label="Pantalla de cine"
-          ></div>
-          <figure class="absolute top-[186px] left-28 w-[1024px] h-[341px] m-0">
-            <img
-              class="w-[1024px] h-[341px]"
-              src="img/seients.png"
-              alt="Mapa de asientos de la sala, con asientos disponibles, seleccionados y ocupados"
-            />
-          </figure>
-        </section>
-        <section
-          class="absolute top-[752px] left-0 w-[1248px] h-14"
-          aria-label="Leyenda de disponibilidad de asientos"
-        >
-          <ul class="list-none m-0 p-0">
-            <li
-              class="left-[145px] bg-white border border-solid border-black absolute top-0 w-14 h-14"
-              aria-hidden="true"
-            ></li>
-            <li
-              class="left-[543px] bg-[#f54646] absolute top-0 w-14 h-14"
-              aria-hidden="true"
-            ></li>
-            <li
-              class="left-[904px] bg-colors-asientos-ocupado absolute top-0 w-14 h-14"
-              aria-hidden="true"
-            ></li>
-            <li
-              class="absolute top-[2px] left-[230px] w-[239px] h-12 flex items-center [font-family:'Lato-Medium',Helvetica] font-medium text-black text-[32px] tracking-[0] leading-[normal]"
-            >
-              Disponible
-            </li>
-            <li
-              class="absolute top-[2px] left-[615px] w-[239px] h-12 flex items-center [font-family:'Lato-Medium',Helvetica] font-medium text-black text-[32px] tracking-[0] leading-[normal]"
-            >
-              Selecionado
-            </li>
-            <li
-              class="absolute top-[2px] left-[980px] w-[239px] h-12 flex items-center [font-family:'Lato-Medium',Helvetica] font-medium text-black text-[32px] tracking-[0] leading-[normal]"
-            >
-              Ocupado
-            </li>
-          </ul>
-        </section>
-        <form
-          class="absolute top-[866px] left-[387px] w-[485px] h-[74px]"
-          action="#"
-          method="post"
-        >
-          <button
-            type="submit"
-            class="flex flex-col w-[485px] h-[74px] items-center justify-center gap-0.5 absolute top-0 left-0 bg-[#6f343a] rounded-2xl overflow-hidden border border-solid border-[#a6a6a6] p-0"
-          >
-            <span
-              class="flex items-center justify-center gap-3 px-12 py-8 relative self-stretch w-full flex-[0_0_auto] mt-[-11.00px]"
-            >
-              <img
-                class="absolute top-[calc(50.00%_-_16px)] left-[calc(50.00%_-_16px)] w-8 h-8 z-[2]"
-                src="img/icon.png"
-                alt=""
-                aria-hidden="true"
-              />
-              <img
-                class="relative w-8 h-8 z-[1]"
-                src="img/icon-2.svg"
-                alt=""
-                aria-hidden="true"
-              />
-              <span
-                class="relative flex items-center w-fit mt-[-2.00px] z-0 [-webkit-text-stroke:1px_#f5f2f0] [font-family:'Lato-Regular',Helvetica] font-normal text-[#f5f2f0] text-[26px] tracking-[0] leading-8 whitespace-nowrap"
-              >
-                Procesar la compra
-              </span>
-            </span>
-          </button>
-        </form>
-      </main>
-    </div>
+    <main class="flex-1 mx-auto w-full max-w-[900px] px-4 sm:px-8 py-8">
+      <h2 class="font-ui text-heading font-medium text-center">Selecion de asientos</h2>
+      <section aria-labelledby="screen-heading" class="mt-6 rounded-md border border-grisclaro bg-blanco p-4 sm:p-8">
+        <h3 id="screen-heading" class="text-center text-small">Pantalla</h3>
+        <div role="img" aria-label="Pantalla de cine" class="h-5 mt-1 rounded-full bg-grismedio"></div>
+        <div class="mt-6 grid grid-cols-12 gap-2 sm:gap-3 max-w-[640px] mx-auto">
+            <button type="button" aria-pressed="false" aria-label="A1 disponible" class="aspect-square rounded-sm bg-asiento-libre border border-grisclaro hover:bg-grismuyclaro"></button>
+            <button type="button" aria-pressed="false" aria-label="A2 disponible" class="aspect-square rounded-sm bg-asiento-libre border border-grisclaro hover:bg-grismuyclaro"></button>
+            <button type="button" aria-pressed="false" aria-label="A3 disponible" class="aspect-square rounded-sm bg-asiento-libre border border-grisclaro hover:bg-grismuyclaro"></button>
+            <button type="button" aria-pressed="false" aria-label="A4 disponible" class="aspect-square rounded-sm bg-asiento-libre border border-grisclaro hover:bg-grismuyclaro"></button>
+            <button type="button" aria-pressed="false" aria-label="A5 disponible" class="aspect-square rounded-sm bg-asiento-libre border border-grisclaro hover:bg-grismuyclaro"></button>
+            <button type="button" aria-pressed="false" aria-label="A6 disponible" class="aspect-square rounded-sm bg-asiento-libre border border-grisclaro hover:bg-grismuyclaro"></button>
+            <button type="button" aria-pressed="false" aria-label="A7 disponible" class="aspect-square rounded-sm bg-asiento-libre border border-grisclaro hover:bg-grismuyclaro"></button>
+            <button type="button" aria-pressed="false" aria-label="A8 disponible" class="aspect-square rounded-sm bg-asiento-libre border border-grisclaro hover:bg-grismuyclaro"></button>
+            <button type="button" aria-pressed="false" aria-label="A9 disponible" class="aspect-square rounded-sm bg-asiento-libre border border-grisclaro hover:bg-grismuyclaro"></button>
+            <button type="button" aria-pressed="false" aria-label="A10 disponible" class="aspect-square rounded-sm bg-asiento-libre border border-grisclaro hover:bg-grismuyclaro"></button>
+            <button type="button" aria-pressed="false" aria-label="A11 disponible" class="aspect-square rounded-sm bg-asiento-libre border border-grisclaro hover:bg-grismuyclaro"></button>
+            <button type="button" aria-pressed="false" aria-label="A12 disponible" class="aspect-square rounded-sm bg-asiento-libre border border-grisclaro hover:bg-grismuyclaro"></button>
+            <button type="button" aria-pressed="false" aria-label="B1 disponible" class="aspect-square rounded-sm bg-asiento-libre border border-grisclaro hover:bg-grismuyclaro"></button>
+            <button type="button" aria-pressed="false" aria-label="B2 disponible" class="aspect-square rounded-sm bg-asiento-libre border border-grisclaro hover:bg-grismuyclaro"></button>
+            <button type="button" aria-pressed="false" aria-label="B3 disponible" class="aspect-square rounded-sm bg-asiento-libre border border-grisclaro hover:bg-grismuyclaro"></button>
+            <button type="button" aria-pressed="false" aria-label="B4 disponible" class="aspect-square rounded-sm bg-asiento-libre border border-grisclaro hover:bg-grismuyclaro"></button>
+            <button type="button" aria-pressed="false" aria-label="B5 disponible" class="aspect-square rounded-sm bg-asiento-libre border border-grisclaro hover:bg-grismuyclaro"></button>
+            <span role="img" aria-label="B6 ocupado" class="aspect-square rounded-sm bg-asiento-ocupado"></span>
+            <span role="img" aria-label="B7 ocupado" class="aspect-square rounded-sm bg-asiento-ocupado"></span>
+            <span role="img" aria-label="B8 ocupado" class="aspect-square rounded-sm bg-asiento-ocupado"></span>
+            <span role="img" aria-label="B9 ocupado" class="aspect-square rounded-sm bg-asiento-ocupado"></span>
+            <span role="img" aria-label="B10 ocupado" class="aspect-square rounded-sm bg-asiento-ocupado"></span>
+            <span role="img" aria-label="B11 ocupado" class="aspect-square rounded-sm bg-asiento-ocupado"></span>
+            <span role="img" aria-label="B12 ocupado" class="aspect-square rounded-sm bg-asiento-ocupado"></span>
+            <span role="img" aria-label="C1 ocupado" class="aspect-square rounded-sm bg-asiento-ocupado"></span>
+            <span role="img" aria-label="C2 ocupado" class="aspect-square rounded-sm bg-asiento-ocupado"></span>
+            <span role="img" aria-label="C3 ocupado" class="aspect-square rounded-sm bg-asiento-ocupado"></span>
+            <button type="button" aria-pressed="true" aria-label="C4 seleccionado" class="aspect-square rounded-sm bg-asiento-seleccionado"></button>
+            <button type="button" aria-pressed="true" aria-label="C5 seleccionado" class="aspect-square rounded-sm bg-asiento-seleccionado"></button>
+            <button type="button" aria-pressed="true" aria-label="C6 seleccionado" class="aspect-square rounded-sm bg-asiento-seleccionado"></button>
+            <button type="button" aria-pressed="false" aria-label="C7 disponible" class="aspect-square rounded-sm bg-asiento-libre border border-grisclaro hover:bg-grismuyclaro"></button>
+            <span role="img" aria-label="C8 ocupado" class="aspect-square rounded-sm bg-asiento-ocupado"></span>
+            <span role="img" aria-label="C9 ocupado" class="aspect-square rounded-sm bg-asiento-ocupado"></span>
+            <span role="img" aria-label="C10 ocupado" class="aspect-square rounded-sm bg-asiento-ocupado"></span>
+            <span role="img" aria-label="C11 ocupado" class="aspect-square rounded-sm bg-asiento-ocupado"></span>
+            <button type="button" aria-pressed="false" aria-label="C12 disponible" class="aspect-square rounded-sm bg-asiento-libre border border-grisclaro hover:bg-grismuyclaro"></button>
+            <span role="img" aria-label="D1 ocupado" class="aspect-square rounded-sm bg-asiento-ocupado"></span>
+            <button type="button" aria-pressed="false" aria-label="D2 disponible" class="aspect-square rounded-sm bg-asiento-libre border border-grisclaro hover:bg-grismuyclaro"></button>
+            <span role="img" aria-label="D3 ocupado" class="aspect-square rounded-sm bg-asiento-ocupado"></span>
+            <button type="button" aria-pressed="false" aria-label="D4 disponible" class="aspect-square rounded-sm bg-asiento-libre border border-grisclaro hover:bg-grismuyclaro"></button>
+            <span role="img" aria-label="D5 ocupado" class="aspect-square rounded-sm bg-asiento-ocupado"></span>
+            <span role="img" aria-label="D6 ocupado" class="aspect-square rounded-sm bg-asiento-ocupado"></span>
+            <span role="img" aria-label="D7 ocupado" class="aspect-square rounded-sm bg-asiento-ocupado"></span>
+            <button type="button" aria-pressed="false" aria-label="D8 disponible" class="aspect-square rounded-sm bg-asiento-libre border border-grisclaro hover:bg-grismuyclaro"></button>
+            <span role="img" aria-label="D9 ocupado" class="aspect-square rounded-sm bg-asiento-ocupado"></span>
+            <button type="button" aria-pressed="false" aria-label="D10 disponible" class="aspect-square rounded-sm bg-asiento-libre border border-grisclaro hover:bg-grismuyclaro"></button>
+            <span role="img" aria-label="D11 ocupado" class="aspect-square rounded-sm bg-asiento-ocupado"></span>
+            <span role="img" aria-label="D12 ocupado" class="aspect-square rounded-sm bg-asiento-ocupado"></span>
+            </div>
+      </section>
+      <section aria-label="Leyenda de disponibilidad de asientos" class="mt-6">
+        <ul class="flex flex-wrap justify-center gap-6 sm:gap-12 text-small"><li class="flex items-center gap-3"><span class="w-6 h-6 rounded-sm bg-asiento-libre border border-grisclaro" aria-hidden="true"></span>Disponible</li><li class="flex items-center gap-3"><span class="w-6 h-6 rounded-sm bg-asiento-seleccionado" aria-hidden="true"></span>Selecionado</li><li class="flex items-center gap-3"><span class="w-6 h-6 rounded-sm bg-asiento-ocupado" aria-hidden="true"></span>Ocupado</li></ul>
+      </section>
+      <div class="mt-6 flex justify-center">
+        <a href="resumenCompra.html" class="inline-flex items-center gap-2 px-8 py-3 rounded-lg bg-rojooscuro hover:bg-rojohover text-blanco text-small font-medium transition"><svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 7l1.5 3 3.3.5-2.4 2.3.6 3.3-3-1.6-3 1.6.6-3.3-2.4-2.3 3.3-.5z"/></svg>Procesar la compra</a>
+      </div>
+    </main>
+    <footer class="bg-rojosuave text-blanco font-subheading text-small sm:text-subheading px-6 sm:px-[72px] py-4 mt-auto">
+      Todos los derechos reservados
+    </footer>
   </body>
 </html>
