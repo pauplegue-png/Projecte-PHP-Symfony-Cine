@@ -1,230 +1,78 @@
 <!doctype html>
 <html lang="es">
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Cartelera</title>
     <link rel="stylesheet" href="css/colors.css" />
     <link rel="stylesheet" href="fonts/typography.css" />
     <link rel="stylesheet" href="fonts/sizes.css" />
     <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/headers.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="js/tailwind-config.js"></script>
   </head>
-  <body>
-    <div
-      class="bg-[#f5f2f0] overflow-hidden w-full min-w-[1440px] min-h-[1024px] relative"
-    >
-      <header
-        class="flex flex-col w-[1444px] h-[228px] items-center justify-center absolute top-0 -left-0.5 overflow-hidden [background:linear-gradient(0deg,rgba(227,227,227,1)_0%,rgba(227,227,227,1)_100%)]"
-        aria-label="Navegación principal"
-      >
-        <img
-          class="relative self-stretch w-full aspect-[2.59] object-cover"
-          src="img/images-5.png"
-          alt=""
-        />
-        <div
-          class="relative w-[1444px] h-[227px] bg-[#6f343a]"
-          aria-hidden="true"
-        ></div>
-      </header>
-      <nav aria-label="Acciones de usuario">
-        <button
-          type="button"
-          class="absolute top-[30px] left-[1322px] w-[46px] h-[53px] flex"
-          aria-label="Cerrar sesión"
-        >
-          <img
-            class="flex-1 w-[38.5px]"
-            src="img/icon-3.svg"
-            alt=""
-            aria-hidden="true"
-          />
-        </button>
-        <button
-          type="button"
-          class="absolute top-7 left-[1237px] w-[61px] h-[58px] flex bg-[#6f343a] rounded-[100px] overflow-hidden border border-solid border-[#a6a6a6]"
-          aria-label="Abrir perfil"
-        >
-          <img
-            class="flex-1 w-[42.98px]"
-            src="img/avatar-placeholder.svg"
-            alt=""
-            aria-hidden="true"
-          />
-        </button>
-      </nav>
-      <main>
-        <h1
-          class="absolute top-[278px] left-1 w-[1433px] h-[111px] flex items-center justify-center [font-family:'Nunito-Bold',Helvetica] font-bold text-[#1f1f1f] text-[80px] text-center tracking-[-2.40px] leading-[96.0px] whitespace-nowrap"
-        >
-          Cartelera
-        </h1>
-        <section aria-label="Películas disponibles">
-          <article class="absolute top-[420px] left-24 w-72 h-[488px]">
-            <img
-              class="left-[9px] w-[270px] h-[383px] aspect-[0.68] absolute -top-2.5 object-cover"
-              src="./img/carteleraImgHorizonteRoto.png"
-              alt="Póster de Horizonte roto"
-            />
-            <h2
-              class="absolute top-[371px] left-[38px] w-[211px] [font-family:'Lato-SemiBold',Helvetica] font-semibold text-[#1f1f1f] text-[26px] text-center tracking-[-0.52px] leading-[31.2px]"
-            >
-              Horizonte roto
-            </h2>
-            <p
-              class="absolute top-[432px] left-[45px] w-[213px] [font-family:'Lato-Bold',Helvetica] font-bold text-black text-2xl tracking-[-0.48px] leading-[28.8px]"
-            >
-              + 12
-            </p>
-            <button
-              type="button"
-              class="inline-flex items-center justify-center absolute top-[430px] left-[127px] bg-[#e8def8] rounded-[100px] overflow-hidden border border-solid border-[#a6a6a6]"
-              aria-label="Ver sinopsis de Horizonte roto"
-            >
-              <span
-                class="inline-flex items-center justify-center gap-2 px-4 py-2.5 relative flex-[0_0_auto] bg-[#6f343a]"
-              >
-                <img
-                  class="relative w-5 h-5"
-                  src="img/icon-4.svg"
-                  alt=""
-                  aria-hidden="true"
-                />
-                <span
-                  class="relative flex items-center w-fit mt-[-1.00px] [font-family:'Lato-Medium',Helvetica] font-medium text-white text-sm tracking-[0.10px] leading-5 whitespace-nowrap"
-                >
-                  Sinopsis
-                </span>
-              </span>
-            </button>
+  <body class="bg-blancoroto font-body text-grisoscuro min-h-screen flex flex-col">
+    <header class="header-cartelera relative overflow-hidden" aria-label="Navegación principal">
+      <img src="img/cabecera-cartelera.png" alt="" class="header-img absolute inset-0 w-full h-full object-cover" />
+      <div class="relative z-10 flex items-center justify-end gap-3 px-4 sm:px-8 pt-4 text-blanco">
+        <a href="perfilUsuari.html" aria-label="Abrir perfil" class="inline-flex"><span class="grid place-items-center w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-rojooscuro text-blanco border border-grisclaro">
+              <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+            </span></a>
+        <a href="Login.html" aria-label="Cerrar sesión" class="inline-flex text-blanco hover:opacity-80"><svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><path d="M16 17l5-5-5-5"/><path d="M21 12H9"/></svg></a>
+      </div>
+    </header>
+    <main class="flex-1 mx-auto w-full max-w-[1200px] px-4 sm:px-8 py-10">
+      <h1 class="font-heading font-bold text-display text-center">Cartelera</h1>
+      <section aria-label="Películas disponibles" class="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-12">
+          <article class="flex flex-col items-center text-center gap-3">
+            <div class="relative aspect-[2/3] overflow-hidden rounded-sm bg-gradient-to-br from-grismediooscuro to-grisoscuro shadow-lg w-full max-w-[270px]">
+              <span class="absolute inset-0 grid place-items-center p-3 text-center text-blanco font-heading font-bold">Horizonte roto</span>
+              <img src="./img/carteleraImgHorizonteRoto.png" alt="Póster de Horizonte roto" class="relative w-full h-full object-cover" onerror="this.remove()" />
+            </div>
+            <h2 class="font-body font-semibold text-heading tracking-tight">Horizonte roto</h2>
+            <div class="flex items-center gap-5">
+              <p class="font-body font-bold text-subheading">+ 12</p>
+              <a href="sinopsis.html" aria-label="Ver sinopsis de Horizonte roto" class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-rojooscuro hover:bg-rojohover text-blanco text-small font-medium transition"><svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 7l1.5 3 3.3.5-2.4 2.3.6 3.3-3-1.6-3 1.6.6-3.3-2.4-2.3 3.3-.5z"/></svg>Sinopsis</a>
+            </div>
           </article>
-          <article class="absolute top-[420px] left-[416px] w-72 h-[488px]">
-            <img
-              class="left-[13px] w-[262px] h-[383px] aspect-[0.65] absolute -top-2.5 object-cover"
-              src="img/image-2.png"
-              alt="Póster de Operacion medianoche"
-            />
-            <h2
-              class="absolute top-[371px] left-3 w-[265px] [font-family:'Lato-SemiBold',Helvetica] font-semibold text-[#1f1f1f] text-[26px] text-center tracking-[-0.52px] leading-[31.2px]"
-            >
-              Operacion medianoche
-            </h2>
-            <p
-              class="absolute top-[432px] left-[45px] w-[213px] [font-family:'Lato-SemiBold',Helvetica] font-semibold text-black text-2xl tracking-[-0.48px] leading-[28.8px]"
-            >
-              + 12
-            </p>
-            <button
-              type="button"
-              class="inline-flex items-center justify-center absolute top-[430px] left-[127px] bg-[#e8def8] rounded-[100px] overflow-hidden border border-solid border-[#a6a6a6]"
-              aria-label="Ver sinopsis de Operacion medianoche"
-            >
-              <span
-                class="inline-flex items-center justify-center gap-2 px-4 py-2.5 relative flex-[0_0_auto] bg-[#6f343a]"
-              >
-                <img
-                  class="relative w-5 h-5"
-                  src="img/icon.svg"
-                  alt=""
-                  aria-hidden="true"
-                />
-                <span
-                  class="relative flex items-center w-fit mt-[-1.00px] [font-family:'Lato-Medium',Helvetica] font-medium text-white text-sm tracking-[0.10px] leading-5 whitespace-nowrap"
-                >
-                  Sinopsis
-                </span>
-              </span>
-            </button>
+          <article class="flex flex-col items-center text-center gap-3">
+            <div class="relative aspect-[2/3] overflow-hidden rounded-sm bg-gradient-to-br from-grismediooscuro to-grisoscuro shadow-lg w-full max-w-[270px]">
+              <span class="absolute inset-0 grid place-items-center p-3 text-center text-blanco font-heading font-bold">Operacion medianoche</span>
+              <img src="img/image-2.png" alt="Póster de Operacion medianoche" class="relative w-full h-full object-cover" onerror="this.remove()" />
+            </div>
+            <h2 class="font-body font-semibold text-heading tracking-tight">Operacion medianoche</h2>
+            <div class="flex items-center gap-5">
+              <p class="font-body font-bold text-subheading">+ 12</p>
+              <a href="sinopsis.html" aria-label="Ver sinopsis de Operacion medianoche" class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-rojooscuro hover:bg-rojohover text-blanco text-small font-medium transition"><svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 7l1.5 3 3.3.5-2.4 2.3.6 3.3-3-1.6-3 1.6.6-3.3-2.4-2.3 3.3-.5z"/></svg>Sinopsis</a>
+            </div>
           </article>
-          <article class="absolute top-[420px] left-[736px] w-72 h-[488px]">
-            <img
-              class="left-[3px] w-[282px] h-[385px] aspect-[0.71] absolute -top-2.5 object-cover"
-              src="img/image-3.png"
-              alt="Póster de Tierra de nadie"
-            />
-            <h2
-              class="absolute top-[371px] left-[38px] w-[211px] [font-family:'Lato-SemiBold',Helvetica] font-semibold text-[#1f1f1f] text-[26px] text-center tracking-[-0.52px] leading-[31.2px]"
-            >
-              Tierra de nadie
-            </h2>
-            <p
-              class="absolute top-[432px] left-[45px] w-[213px] [font-family:'Lato-SemiBold',Helvetica] font-semibold text-black text-2xl tracking-[-0.48px] leading-[28.8px]"
-            >
-              + 12
-            </p>
-            <button
-              type="button"
-              class="inline-flex items-center justify-center absolute top-[430px] left-[127px] bg-[#e8def8] rounded-[100px] overflow-hidden border border-solid border-[#a6a6a6]"
-              aria-label="Ver sinopsis de Tierra de nadie"
-            >
-              <span
-                class="inline-flex items-center justify-center gap-2 px-4 py-2.5 relative flex-[0_0_auto] bg-[#6f343a]"
-              >
-                <img
-                  class="relative w-5 h-5"
-                  src="img/icon-2.svg"
-                  alt=""
-                  aria-hidden="true"
-                />
-                <span
-                  class="relative flex items-center w-fit mt-[-1.00px] [font-family:'Lato-Medium',Helvetica] font-medium text-white text-sm tracking-[0.10px] leading-5 whitespace-nowrap"
-                >
-                  Sinopsis
-                </span>
-              </span>
-            </button>
+          <article class="flex flex-col items-center text-center gap-3">
+            <div class="relative aspect-[2/3] overflow-hidden rounded-sm bg-gradient-to-br from-grismediooscuro to-grisoscuro shadow-lg w-full max-w-[270px]">
+              <span class="absolute inset-0 grid place-items-center p-3 text-center text-blanco font-heading font-bold">Tierra de nadie</span>
+              <img src="img/image-3.png" alt="Póster de Tierra de nadie" class="relative w-full h-full object-cover" onerror="this.remove()" />
+            </div>
+            <h2 class="font-body font-semibold text-heading tracking-tight">Tierra de nadie</h2>
+            <div class="flex items-center gap-5">
+              <p class="font-body font-bold text-subheading">+ 12</p>
+              <a href="sinopsis.html" aria-label="Ver sinopsis de Tierra de nadie" class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-rojooscuro hover:bg-rojohover text-blanco text-small font-medium transition"><svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 7l1.5 3 3.3.5-2.4 2.3.6 3.3-3-1.6-3 1.6.6-3.3-2.4-2.3 3.3-.5z"/></svg>Sinopsis</a>
+            </div>
           </article>
-          <article class="absolute top-[420px] left-[1056px] w-72 h-[488px]">
-            <img
-              class="left-0.5 w-[283px] h-[385px] aspect-[0.71] absolute -top-2.5 object-cover"
-              src="img/image-4.png"
-              alt="Póster de Una noche sin luna"
-            />
-            <h2
-              class="absolute top-[371px] left-[26px] w-[235px] [font-family:'Lato-SemiBold',Helvetica] font-semibold text-[#1f1f1f] text-[26px] text-center tracking-[-0.52px] leading-[31.2px]"
-            >
-              Una noche sin luna
-            </h2>
-            <p
-              class="absolute top-[432px] left-[45px] w-[213px] [font-family:'Lato-SemiBold',Helvetica] font-semibold text-black text-2xl tracking-[-0.48px] leading-[28.8px]"
-            >
-              + 12
-            </p>
-            <button
-              type="button"
-              class="inline-flex items-center justify-center absolute top-[430px] left-[127px] bg-[#e8def8] rounded-[100px] overflow-hidden border border-solid border-[#a6a6a6]"
-              aria-label="Ver sinopsis de Una noche sin luna"
-            >
-              <span
-                class="inline-flex items-center justify-center gap-2 px-4 py-2.5 relative flex-[0_0_auto] bg-[#6f343a]"
-              >
-                <img
-                  class="relative w-5 h-5"
-                  src="img/image.svg"
-                  alt=""
-                  aria-hidden="true"
-                />
-                <span
-                  class="relative flex items-center w-fit mt-[-1.00px] [font-family:'Lato-Medium',Helvetica] font-medium text-white text-sm tracking-[0.10px] leading-5 whitespace-nowrap"
-                >
-                  Sinopsis
-                </span>
-              </span>
-            </button>
+          <article class="flex flex-col items-center text-center gap-3">
+            <div class="relative aspect-[2/3] overflow-hidden rounded-sm bg-gradient-to-br from-grismediooscuro to-grisoscuro shadow-lg w-full max-w-[270px]">
+              <span class="absolute inset-0 grid place-items-center p-3 text-center text-blanco font-heading font-bold">Una noche sin luna</span>
+              <img src="img/image-4.png" alt="Póster de Una noche sin luna" class="relative w-full h-full object-cover" onerror="this.remove()" />
+            </div>
+            <h2 class="font-body font-semibold text-heading tracking-tight">Una noche sin luna</h2>
+            <div class="flex items-center gap-5">
+              <p class="font-body font-bold text-subheading">+ 12</p>
+              <a href="sinopsis.html" aria-label="Ver sinopsis de Una noche sin luna" class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-rojooscuro hover:bg-rojohover text-blanco text-small font-medium transition"><svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 7l1.5 3 3.3.5-2.4 2.3.6 3.3-3-1.6-3 1.6.6-3.3-2.4-2.3 3.3-.5z"/></svg>Sinopsis</a>
+            </div>
           </article>
-        </section>
-      </main>
-      <footer
-        class="absolute -left-0.5 bottom-0 w-[1444px] h-[76px] bg-[#a9474f]"
-      >
-        <p
-          class="absolute top-[957px] left-[72px] w-[641px] h-[58px] flex items-center font-subheading font-[number:var(--subheading-font-weight)] text-[#fbfbfb] text-[length:var(--subheading-font-size)] tracking-[var(--subheading-letter-spacing)] leading-[var(--subheading-line-height)] [font-style:var(--subheading-font-style)]"
-        >
-          Todos los derechos reservados
-        </p>
-      </footer>
-    </div>
+      </section>
+    </main>
+    <footer class="bg-rojosuave text-blanco font-subheading text-small sm:text-subheading px-6 sm:px-[72px] py-4 mt-auto">
+      Todos los derechos reservados
+    </footer>
   </body>
 </html>
