@@ -7,55 +7,12 @@
       name="description"
       content="Selecciona una fecha y horario para ver Hasta el horizonte"
     />
-    <link rel="stylesheet" href="./css/global.css" />
-    <link rel="stylesheet" href="./css/escojerHoraSesionCSS.css" />
+    <link rel="stylesheet" href="css/colors.css" />
+    <link rel="stylesheet" href="fonts/typography.css" />
+    <link rel="stylesheet" href="fonts/sizes.css" />
+    <link rel="stylesheet" href="css/global.css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      /** @type {import('tailwindcss').Config} */
-      tailwind.config = {
-        corePlugins: {
-          preflight: false,
-        },
-        theme: {
-          extend: {
-            colors: {
-              "color-contrast-light-grays-black":
-                "var(--color-contrast-light-grays-black)",
-              "color-scheme-grays-black": "var(--color-scheme-grays-black)",
-              "colors-asientos-adaptado": "var(--colors-asientos-adaptado)",
-              "colors-asientos-libre": "var(--colors-asientos-libre)",
-              "colors-asientos-ocupado": "var(--colors-asientos-ocupado)",
-              "colors-asientos-premium": "var(--colors-asientos-premium)",
-              "colors-asientos-seleccionado":
-                "var(--colors-asientos-seleccionado)",
-              "colors-neutros-blanco": "var(--colors-neutros-blanco)",
-              "colors-neutros-blancoroto": "var(--colors-neutros-blancoroto)",
-              "colors-neutros-grisclaro": "var(--colors-neutros-grisclaro)",
-              "colors-neutros-grismedio": "var(--colors-neutros-grismedio)",
-              "colors-neutros-grismediooscuro":
-                "var(--colors-neutros-grismediooscuro)",
-              "colors-neutros-grismuyclaro":
-                "var(--colors-neutros-grismuyclaro)",
-              "colors-neutros-grisoscuro": "var(--colors-neutros-grisoscuro)",
-              "colors-principales-rojoactivo":
-                "var(--colors-principales-rojoactivo)",
-              "colors-principales-rojohover":
-                "var(--colors-principales-rojohover)",
-              "colors-principales-rojooscuro":
-                "var(--colors-principales-rojooscuro)",
-              "colors-principales-rojosuave":
-                "var(--colors-principales-rojosuave)",
-              "colors-semanticos-aviso": "var(--colors-semanticos-aviso)",
-              "colors-semanticos-error": "var(--colors-semanticos-error)",
-              "colors-semanticos-exito": "var(--colors-semanticos-exito)",
-              "colors-semanticos-informacion":
-                "var(--colors-semanticos-informacion)",
-            },
-          },
-        },
-        plugins: [],
-      };
-    </script>
+    <script src="js/tailwind-config.js"></script>
   </head>
   <body>
     <div
