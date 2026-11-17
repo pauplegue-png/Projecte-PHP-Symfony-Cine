@@ -1,202 +1,66 @@
 <!doctype html>
 <html lang="es">
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="utf-8" />
-    <title>Hasta el horizonte</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sinopsis</title>
     <link rel="stylesheet" href="css/colors.css" />
     <link rel="stylesheet" href="fonts/typography.css" />
     <link rel="stylesheet" href="fonts/sizes.css" />
     <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/headers.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="js/tailwind-config.js"></script>
   </head>
-  <body>
-    <main
-      class="flex flex-col h-[1279px] items-start gap-12 pt-8 pb-16 px-[72px] relative bg-colors-neutros-blancoroto border border-solid border-black"
-    >
-      <header
-        class="flex w-[1299px] h-[58px] items-center justify-between relative mr-[-1.00px]"
-      >
-        <nav
-          class="flex w-32 items-center gap-6 relative"
-          aria-label="Navegación principal"
-        >
-          <a href="#" aria-label="Inicio">
-            <img
-              class="relative w-[49.5px] h-[51.5px] ml-[-1.75px]"
-              src="img/icon-2.svg"
-              alt=""
-            />
-          </a>
-          <a href="#" aria-label="Volver">
-            <span class="relative w-[58px] h-[55px]">
-              <img
-                class="absolute w-[83.33%] h-[83.33%] top-[16.67%] left-[16.67%]"
-                src="img/icon.svg"
-                alt=""
-              />
-            </span>
-          </a>
-        </nav>
-        <nav
-          class="flex w-[135px] items-center gap-7 relative"
-          aria-label="Cuenta de usuario"
-        >
-          <a href="#" aria-label="Perfil de usuario">
-            <span
-              class="relative w-[61px] h-[58px] bg-[#6f343a] rounded-[100px] overflow-hidden border border-solid border-[#a6a6a6]"
-            >
-              <img
-                class="absolute w-[85.23%] h-[75.00%] top-[25.00%] left-[14.77%]"
-                src="img/avatar-placeholder.svg"
-                alt=""
-              />
-            </span>
-          </a>
-          <a href="#" aria-label="Cerrar sesión">
-            <span class="relative w-[46px] h-[53px]">
-              <img
-                class="absolute w-[91.85%] h-[91.27%] top-[8.73%] left-[8.15%]"
-                src="img/image.svg"
-                alt=""
-              />
-            </span>
-          </a>
-        </nav>
-      </header>
-      <section
-        class="flex w-[1299px] items-start gap-12 relative flex-[0_0_auto] mr-[-1.00px]"
-        aria-labelledby="movie-title"
-      >
-        <figure
-          class="flex flex-col w-[344px] h-[489px] items-center justify-center relative rounded-2xl overflow-hidden shadow-[0px_8px_18px_#0000002e] [background:linear-gradient(0deg,rgba(227,227,227,1)_0%,rgba(227,227,227,1)_100%)]"
-        >
-          <img
-            class="relative self-stretch w-full aspect-[0.68] object-cover"
-            src="img/image-1.png"
-            alt="Cartel de la película Hasta el horizonte"
-          />
-        </figure>
-        <article class="flex flex-col w-[907px] items-start gap-5 relative">
-          <h1
-            id="movie-title"
-            class="relative w-[907px] mt-[-1.00px] [font-family:'Nunito-SemiBold',Helvetica] font-semibold text-black text-[64px] tracking-[0] leading-[normal]"
-          >
-            Hasta el horizonte
-          </h1>
-          <div
-            class="flex w-[469px] items-center gap-6 relative flex-[0_0_auto]"
-            aria-label="Clasificación y duración"
-          >
-            <span
-              class="relative w-[105px] mt-[-1.00px] [font-family:'Lato-Regular',Helvetica] font-normal text-[#f05c01] text-[40px] tracking-[0] leading-[normal]"
-            >
-              + 12
-            </span>
-            <span
-              class="relative w-[340px] mt-[-1.00px] [font-family:'Lato-Regular',Helvetica] font-normal text-black text-[40px] tracking-[0] leading-[normal]"
-            >
-              Duración: 150 min
-            </span>
+  <body class="bg-blancoroto font-body text-grisoscuro min-h-screen flex flex-col">
+    <header aria-label="Navegación">
+      <div class="text-grisoscuro"><div class="flex items-center justify-between gap-4 px-4 sm:px-8 pt-4">
+          <nav aria-label="Navegación principal" class="flex items-center gap-3">
+            <a href="index.html" aria-label="Ir al inicio" class="inline-flex text-grisoscuro hover:opacity-80 transition"><svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/></svg></a>
+            <a href="index.html" aria-label="Volver" class="inline-flex text-grisoscuro hover:opacity-80 transition"><svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5"/><path d="M12 19l-7-7 7-7"/></svg></a>
+          </nav>
+          <nav aria-label="Cuenta de usuario" class="flex items-center gap-3">
+            <a href="perfilUsuari.html" aria-label="Perfil de usuario" class="inline-flex"><span class="grid place-items-center w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-rojooscuro text-blanco border border-grisclaro">
+              <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+            </span></a>
+            <a href="Login.html" aria-label="Cerrar sesión" class="inline-flex text-grisoscuro hover:opacity-80 transition"><svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><path d="M16 17l5-5-5-5"/><path d="M21 12H9"/></svg></a>
+          </nav>
+        </div></div>
+    </header>
+    <main class="flex-1 mx-auto w-full max-w-[1100px] px-4 sm:px-8 py-8">
+      <section aria-labelledby="movie-title" class="grid gap-8 md:grid-cols-[240px_1fr] items-start">
+        <div class="relative aspect-[2/3] overflow-hidden rounded-sm bg-gradient-to-br from-grismediooscuro to-grisoscuro shadow-lg w-48 md:w-full mx-auto">
+              <span class="absolute inset-0 grid place-items-center p-3 text-center text-blanco font-heading font-bold">Hasta el horizonte</span>
+              <img src="img/image-1.png" alt="Póster de Hasta el horizonte" class="relative w-full h-full object-cover" onerror="this.remove()" />
+            </div>
+        <article class="grid gap-5 md:grid-cols-[1fr_auto] md:items-start">
+          <div>
+            <h1 id="movie-title" class="font-heading font-semibold text-title">Hasta el horizonte</h1>
+            <p class="mt-2 flex items-center gap-4 text-subheading"><span class="text-naranja">+ 12</span><span>Duración: 150 min</span></p>
           </div>
-          <p
-            class="relative w-[907px] [font-family:'Lato-Regular',Helvetica] font-normal text-[#1f1f1f] text-[26px] tracking-[0] leading-[normal]"
-          >
-            Tiempo después de su ruptura, Sara y Jackson se reencuentran unos
-            días antes de la boda de un amigo en común que se casa en una isla
-            remota. Juntos atraviesan el océano camino a la boda, pero cuando el
-            piloto de la avioneta sufre un ataque al corazón, ellos deberán
-            hacer lo imposible para mantener la avioneta en el aire.
-          </p>
-          <button
-            type="button"
-            class="flex flex-col w-[315px] h-[74px] items-center justify-center gap-0.5 relative bg-[#6f343a] rounded-2xl overflow-hidden border border-solid border-[#a6a6a6]"
-            aria-label="Comprar entradas para Hasta el horizonte"
-          >
-            <span
-              class="flex items-center justify-center gap-3 px-12 py-8 relative self-stretch w-full flex-[0_0_auto] mt-[-11.00px]"
-            >
-              <img
-                class="absolute top-[calc(50.00%_-_16px)] left-[calc(50.00%_-_16px)] w-8 h-8 z-[2]"
-                src="img/icon.png"
-                alt=""
-              />
-              <img
-                class="relative w-8 h-8 ml-[-7.50px] z-[1]"
-                src="img/icon-3.svg"
-                alt=""
-              />
-              <span
-                class="relative flex items-center w-fit mt-[-2.00px] mr-[-6.50px] z-0 [-webkit-text-stroke:1px_#f5f2f0] [font-family:'Lato-Regular',Helvetica] font-normal text-[#f5f2f0] text-2xl tracking-[0] leading-8 whitespace-nowrap"
-              >
-                Comprar Entradas
-              </span>
-            </span>
-          </button>
+          <a href="escojerHoraSesion.html" aria-label="Comprar entradas para Hasta el horizonte" class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg bg-rojooscuro hover:bg-rojohover text-blanco text-small font-medium w-fit transition"><svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 7l1.5 3 3.3.5-2.4 2.3.6 3.3-3-1.6-3 1.6.6-3.3-2.4-2.3 3.3-.5z"/></svg>Comprar Entradas</a>
+          <p class="md:col-span-2 text-center text-small leading-relaxed max-w-[640px] mx-auto">Tiempo después de su ruptura, Sara y Jackson se reencuentran unos días antes de la boda de un amigo en común que se casa en una isla remota. Juntos atraviesan el océano camino a la boda, pero cuando el piloto de la avioneta sufre un ataque al corazón, ellos deberán hacer lo imposible para mantener la avioneta en el aire.</p>
         </article>
       </section>
-      <section
-        class="flex w-[1299px] items-start gap-[99px] relative flex-[0_0_auto] mr-[-1.00px]"
-        aria-label="Información adicional de la película"
-      >
-        <section
-          class="flex flex-col w-[640px] items-start gap-6 relative"
-          aria-labelledby="cast-title"
-        >
-          <h2
-            id="cast-title"
-            class="relative w-[167px] h-[51px] mt-[-1.00px] [font-family:'Nunito-Regular',Helvetica] font-normal text-black text-[40px] tracking-[0] leading-[normal]"
-          >
-            Reparto
-          </h2>
-          <div
-            class="flex w-[640px] h-[378px] items-start gap-2 px-4 py-2 relative"
-            aria-label="Información del reparto"
-          >
-            <article
-              class="flex-1 grow bg-[#a9474f] overflow-hidden flex flex-col items-start gap-2.5 relative self-stretch rounded-[var(--shape-corner-extra-large)]"
-            >
-              <div class="relative flex-1 self-stretch w-full grow">
-                <div
-                  class="flex flex-col w-full h-full items-start justify-end gap-1 p-4 relative bg-blend-multiply [background:linear-gradient(180deg,rgba(255,255,255,0)_0%,rgba(0,0,0,0.5)_100%)]"
-                >
-                  <span
-                    class="relative flex items-end w-fit font-m3-title-medium font-[number:var(--m3-title-medium-font-weight)] text-m-3refneutralneutral-100 text-[length:var(--m3-title-medium-font-size)] tracking-[var(--m3-title-medium-letter-spacing)] leading-[var(--m3-title-medium-line-height)] whitespace-nowrap [font-style:var(--m3-title-medium-font-style)]"
-                  >
-                    Label
-                  </span>
-                </div>
-              </div>
-            </article>
-            <aside
-              class="w-14 bg-[#6f343a] flex flex-col items-start gap-2.5 relative self-stretch rounded-[var(--shape-corner-extra-large)]"
-              aria-label="Más información del reparto"
-            ></aside>
+      <section aria-label="Información adicional" class="mt-12 grid gap-10 md:grid-cols-[1fr_1fr]">
+        <div>
+          <h2 class="font-body text-heading text-center md:text-left">Reparto</h2>
+          <div class="mt-4 flex gap-3 overflow-x-auto">
+            <figure class="shrink-0 w-56">
+              <div class="h-64 rounded-2xl bg-gradient-to-b from-rojosuave to-rojooscuro text-blanco text-caption p-3 flex items-end">Label</div>
+              <figcaption class="mt-2 text-center text-small">Rol de la persona</figcaption>
+            </figure>
+            <div class="shrink-0 w-8 h-64 rounded-2xl bg-rojooscuro" aria-hidden="true"></div>
           </div>
-          <p
-            class="relative w-[241px] h-[47px] [font-family:'Inter-Regular',Helvetica] font-normal text-black text-2xl tracking-[0] leading-[normal]"
-          >
-            Rol de la parsona
-          </p>
-        </section>
-        <section
-          class="flex flex-col w-[560px] items-start gap-6 relative"
-          aria-labelledby="awards-title"
-        >
-          <h2
-            id="awards-title"
-            class="relative w-[315px] h-[53px] mt-[-1.00px] [font-family:'Nunito-Regular',Helvetica] font-normal text-black text-[40px] tracking-[0] leading-[normal]"
-          >
-            Premios
-          </h2>
-          <p
-            class="relative w-[560px] [font-family:'Lato-Regular',Helvetica] font-normal text-black text-[26px] tracking-[0] leading-[normal]"
-          >
-            Lamentablemente no ha sido nominada ni premiada
-          </p>
-        </section>
+        </div>
+        <div>
+          <h2 class="font-body text-heading text-center">Premios</h2>
+          <p class="mt-4 text-center text-small">Lamentablemente no ha sido nominada ni premiada</p>
+        </div>
       </section>
     </main>
+    <footer class="bg-rojosuave text-blanco font-subheading text-small sm:text-subheading px-6 sm:px-[72px] py-4 mt-auto">
+      Todos los derechos reservados
+    </footer>
   </body>
 </html>
