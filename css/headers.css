@@ -1,0 +1,10 @@
+/* Cabeceras: reservan el espacio y la imagen (<img class="header-img">) rellena todo el header.
+   Pon tu imagen en img/cabecera-cartelera.png (Cartelera) e img/cabecera-pelicula.png (resto de páginas)
+   o cambia el src de la etiqueta <img>. */
+.header-cartelera { min-height: 10rem; }
+.header-pelicula { min-height: 9rem; }
+.header-img {
+  object-fit: cover;
+  object-position: center;
+  pointer-events: none;
+}
