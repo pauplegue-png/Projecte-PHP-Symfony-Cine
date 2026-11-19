@@ -3,83 +3,68 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Pago</title>
+    <title>Datos de pago</title>
     <link rel="stylesheet" href="css/colors.css" />
     <link rel="stylesheet" href="fonts/typography.css" />
     <link rel="stylesheet" href="fonts/sizes.css" />
     <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/headers.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="js/tailwind-config.js"></script>
   </head>
-  <body>
-<div class="w-[1440px] h-[1132px] relative bg-stone-100 outline outline-1 outline-offset-[-1px] outline-black overflow-hidden">
-  <div class="w-[1096px] h-[648px] left-[172px] top-[394px] absolute bg-white rounded-[20px] border border-black"></div>
-  <div class="w-[459px] h-20 left-[474px] top-[288px] absolute text-center justify-center text-black text-4xl font-medium font-['Nunito']">Datos de pago</div>
-  <div class="w-[942px] h-20 left-[252px] top-[478px] absolute bg-white rounded-[20px] border border-neutral-400"></div>
-  <div class="w-[923px] h-12 left-[268px] top-[490px] absolute justify-center text-neutral-500 text-2xl font-normal font-['Roboto'] leading-8">Juan Garcia Fernandez</div>
-  <div class="w-[923px] left-[252px] top-[426px] absolute justify-center text-stone-900 text-3xl font-normal font-['Lato'] leading-10">Nombre i Apellidos</div>
-  <div data-svg-wrapper class="left-[249px] top-[619px] absolute">
-    <svg width="942" height="75" viewBox="0 0 942 75" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M0 20C0 8.9543 8.9543 0 20 0H922C933.046 0 942 8.95431 942 20V55C942 66.0457 933.046 75 922 75H20C8.9543 75 0 66.0457 0 55V20Z" fill="white"/>
-    <mask id="stroke0_104_945" fill="white">
-    <path d="M0 20C0 8.9543 8.9543 0 20 0H922C933.046 0 942 8.95431 942 20V55C942 66.0457 933.046 75 922 75H20C8.9543 75 0 66.0457 0 55V20Z"/>
-    </mask>
-    <path d="M20 75H922C933.046 75 942 66.0457 942 55V20C942 8.95431 933.046 0 922 0H20C8.95431 0 0 8.9543 0 20V55C0 66.0457 8.9543 75 20 75Z" stroke-width="2" stroke="#A9474F" mask="url(#stroke0_104_945)"/>
-    </svg>
-  </div>
-  <div class="w-[923px] left-[253px] top-[573px] absolute justify-center text-stone-900 text-3xl font-normal font-['Lato'] leading-10">Numero de la Targeta</div>
-  <div class="w-[923px] h-12 left-[265px] top-[631px] absolute justify-center text-neutral-500 text-2xl font-normal font-['Roboto'] leading-8">0000-0000-0000-0000</div>
-  <div class="w-96 h-20 left-[249px] top-[770px] absolute bg-white rounded-[20px] border border-neutral-400"></div>
-  <div class="w-60 left-[252px] top-[723px] absolute justify-center text-stone-900 text-3xl font-normal font-['Lato'] leading-10">MM/YY</div>
-  <div class="w-[923px] h-12 left-[265px] top-[781px] absolute justify-center text-neutral-500 text-2xl font-normal font-['Roboto'] leading-8">MM/YY</div>
-  <div class="w-96 h-20 left-[723px] top-[770px] absolute bg-white rounded-[20px] border border-neutral-400"></div>
-  <div class="w-60 h-12 left-[728px] top-[718px] absolute justify-center text-stone-900 text-3xl font-normal font-['Lato'] leading-10">Codigo Targeta</div>
-  <div class="w-[923px] h-12 left-[739px] top-[782px] absolute justify-center text-neutral-500 text-2xl font-normal font-['Roboto'] leading-8">000</div>
-  <div data-selected="False" data-show-focus-indicator="false" data-show-icon="true" data-show-label-text="true" data-state="Enabled" class="w-96 h-20 min-w-12 left-[525px] top-[910px] absolute bg-pink-900 rounded-2xl outline outline-1 outline-offset-[-1px] outline-neutral-400 inline-flex flex-col justify-center items-center gap-0.5 overflow-hidden">
-    <div class="self-stretch px-12 py-8 relative inline-flex justify-center items-center gap-3 overflow-hidden">
-      <div class="size-8 left-[172.50px] top-[34px] absolute opacity-0 overflow-hidden">
-        <div class="size-7 left-[2.67px] top-[2.67px] absolute"></div>
-      </div>
-      <div data-svg-wrapper class="relative">
-        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M10.6667 24.0001L16.0001 19.9334L21.3334 24.0001L19.3334 17.4001L24.6667 13.6001H18.1334L16.0001 6.66675L13.8667 13.6001H7.33341L12.6667 17.4001L10.6667 24.0001ZM16.0001 29.3334C14.1556 29.3334 12.4223 28.9834 10.8001 28.2834C9.17786 27.5834 7.76675 26.6334 6.56675 25.4334C5.36675 24.2334 4.41675 22.8223 3.71675 21.2001C3.01675 19.5779 2.66675 17.8445 2.66675 16.0001C2.66675 14.1556 3.01675 12.4223 3.71675 10.8001C4.41675 9.17786 5.36675 7.76675 6.56675 6.56675C7.76675 5.36675 9.17786 4.41675 10.8001 3.71675C12.4223 3.01675 14.1556 2.66675 16.0001 2.66675C17.8445 2.66675 19.5779 3.01675 21.2001 3.71675C22.8223 4.41675 24.2334 5.36675 25.4334 6.56675C26.6334 7.76675 27.5834 9.17786 28.2834 10.8001C28.9834 12.4223 29.3334 14.1556 29.3334 16.0001C29.3334 17.8445 28.9834 19.5779 28.2834 21.2001C27.5834 22.8223 26.6334 24.2334 25.4334 25.4334C24.2334 26.6334 22.8223 27.5834 21.2001 28.2834C19.5779 28.9834 17.8445 29.3334 16.0001 29.3334ZM16.0001 26.6667C18.9779 26.6667 21.5001 25.6334 23.5667 23.5667C25.6334 21.5001 26.6667 18.9779 26.6667 16.0001C26.6667 13.0223 25.6334 10.5001 23.5667 8.43341C21.5001 6.36675 18.9779 5.33341 16.0001 5.33341C13.0223 5.33341 10.5001 6.36675 8.43341 8.43341C6.36675 10.5001 5.33341 13.0223 5.33341 16.0001C5.33341 18.9779 6.36675 21.5001 8.43341 23.5667C10.5001 25.6334 13.0223 26.6667 16.0001 26.6667Z" fill="#F5F2F0"/>
-        </svg>
-      </div>
-      <div class="justify-center text-stone-100 text-3xl font-medium font-['Lato'] leading-9">Realizar la compra</div>
-    </div>
-  </div>
-  <div class="w-[1440px] h-56 pl-28 pr-0.5 left-0 top-0 absolute opacity-90 bg-Grays-Black inline-flex flex-col justify-center items-center overflow-hidden">
-    <div class="w-[1563px] h-56 bg-linear-270 from-black/75 via-neutral-900/60 via 36% to-stone-500/0"></div>
-    <img class="w-[1563px] h-[658px]" src="https://placehold.co/1563x658" />
-  </div>
-  <div class="w-36 h-14 left-[517px] top-[147px] absolute text-center justify-center text-orange-700 text-2xl font-normal font-['Lato']">M-12</div>
-  <div class="w-[490px] h-20 left-[484px] top-[82px] absolute text-center justify-center text-white text-3xl font-medium font-['Nunito']">Hasta el horizonte</div>
-  <div class="w-52 h-9 left-[729px] top-[158px] absolute text-center justify-center text-white text-2xl font-normal font-['Lato']">Accion, Drama</div>
-  <div class="w-28 h-12 left-[616px] top-[149px] absolute text-center justify-center text-white text-2xl font-normal font-['Lato']">159 min </div>
-  <div class="w-28 h-12 left-[675px] top-[150px] absolute text-center justify-center text-white text-2xl font-normal font-['Lato']">|</div>
-  <div data-svg-wrapper class="left-[1355px] top-[26px] absolute">
-    <svg width="46" height="53" viewBox="0 0 46 53" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M17.25 46.375H9.58333C8.56667 46.375 7.59165 45.9097 6.87276 45.0814C6.15387 44.2531 5.75 43.1297 5.75 41.9583V11.0417C5.75 9.87029 6.15387 8.7469 6.87276 7.91861C7.59165 7.09033 8.56667 6.625 9.58333 6.625H17.25M30.6667 15.4583L40.25 26.5L30.6667 37.5417M40.25 26.5H17.25" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke="var(--Grays-White, white)"/>
-    </svg>
-  </div>
-  <div data-svg-wrapper class="left-[94px] top-[29px] absolute">
-    <svg width="45" height="47" viewBox="0 0 45 47" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M14.6719 25.4584L25.1719 36.425L22.5 39.1667L7.5 23.5L22.5 7.83337L25.1719 10.575L14.6719 21.5417H37.5V25.4584H14.6719Z" fill="var(--Schemes-Background, #FEF7FF)"/>
-    </svg>
-  </div>
-  <div data-svg-wrapper class="left-[34px] top-[31px] absolute">
-    <svg width="43" height="43" viewBox="0 0 43 43" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M16.125 39.4167V21.5H26.875V39.4167M5.375 16.125L21.5 3.58337L37.625 16.125V35.8334C37.625 36.7837 37.2475 37.6952 36.5755 38.3672C35.9035 39.0392 34.992 39.4167 34.0417 39.4167H8.95833C8.00797 39.4167 7.09654 39.0392 6.42453 38.3672C5.75253 37.6952 5.375 36.7837 5.375 35.8334V16.125Z" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" stroke="var(--Icon-Brand-On-Brand, #F5F5F5)"/>
-    </svg>
-  </div>
-  <div data-svg-wrapper data-style="Avatar" class="left-[1273px] top-[23px] absolute">
-    <svg width="61" height="58" viewBox="0 0 61 58" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <rect x="0.5" y="0.5" width="60" height="57" rx="28.5" fill="#A9474F"/>
-    <rect x="0.5" y="0.5" width="60" height="57" rx="28.5" stroke="#A6A6A6"/>
-    <path d="M39.6501 23.2C39.6501 28.0049 35.5535 31.9 30.5001 31.9C25.4467 31.9 21.3501 28.0049 21.3501 23.2C21.3501 18.3951 25.4467 14.5 30.5001 14.5C35.5535 14.5 39.6501 18.3951 39.6501 23.2ZM36.6001 23.2C36.6001 26.4033 33.8691 29 30.5001 29C27.1312 29 24.4001 26.4033 24.4001 23.2C24.4001 19.9967 27.1312 17.4 30.5001 17.4C33.8691 17.4 36.6001 19.9967 36.6001 23.2Z" fill-rule="evenodd" clip-rule="evenodd" fill="#F5F2F0"/>
-    <path d="M30.5001 36.25C20.6267 36.25 12.2143 41.8012 9.00977 49.5785C9.79041 50.3155 10.6128 51.0127 11.4731 51.6665C13.8594 44.5262 21.3451 39.15 30.5001 39.15C39.6551 39.15 47.1409 44.5262 49.5271 51.6665C50.3875 51.0127 51.2099 50.3155 51.9905 49.5785C48.786 41.8012 40.3736 36.25 30.5001 36.25Z" fill="#F5F2F0"/>
-    </svg>
-  </div>
-</div>
+  <body class="bg-blancoroto font-body text-grisoscuro min-h-screen flex flex-col">
+    <header class="header-pelicula relative overflow-hidden text-blanco" aria-label="Información de la película">
+        <img src="img/cabecera-pelicula.png" alt="" class="header-img absolute inset-0 w-full h-full object-cover" />
+        <div class="relative z-10">
+        <div class="flex items-center justify-between gap-4 px-4 sm:px-8 pt-4">
+          <nav aria-label="Navegación principal" class="flex items-center gap-3">
+            <a href="index.html" aria-label="Ir al inicio" class="inline-flex text-blanco hover:opacity-80 transition"><svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/></svg></a>
+            <a href="resumenCompra.html" aria-label="Volver" class="inline-flex text-blanco hover:opacity-80 transition"><svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5"/><path d="M12 19l-7-7 7-7"/></svg></a>
+          </nav>
+          <nav aria-label="Cuenta de usuario" class="flex items-center gap-3">
+            <a href="perfilUsuari.html" aria-label="Perfil de usuario" class="inline-flex"><span class="grid place-items-center w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-rojooscuro text-blanco border border-grisclaro">
+              <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+            </span></a>
+            <a href="Login.html" aria-label="Cerrar sesión" class="inline-flex text-blanco hover:opacity-80 transition"><svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><path d="M16 17l5-5-5-5"/><path d="M21 12H9"/></svg></a>
+          </nav>
+        </div>
+        <div class="px-4 pt-6 pb-8 sm:pb-10 text-center">
+          <h1 class="font-ui text-subheading font-medium">Hasta el horizonte</h1>
+          <p class="mt-1 flex flex-wrap justify-center items-center gap-2 text-small">
+            <span class="text-amarillo font-semibold">M-12</span><span>159 min</span><span aria-hidden="true">|</span><span>Acción, Drama</span>
+          </p>
+        </div>
+        </div>
+      </header>
+    <main class="flex-1 mx-auto w-full max-w-[760px] px-4 sm:px-8 py-8">
+      <h2 class="font-heading font-semibold text-title text-center">Datos de pago</h2>
+      <form action="trans_ok.html" class="mt-8 grid gap-5 rounded-2xl border border-grisoscuro/70 bg-blanco p-5 sm:p-8">
+        <div>
+          <label for="nombre" class="block text-small font-semibold mb-1">Nombre i Apellidos</label>
+          <input id="nombre" name="nombre" type="text" placeholder="Juan Garcia Fernandez" autocomplete="cc-name" class="w-full h-12 px-4 rounded-xl border border-grisclaro bg-blanco text-body focus:outline-none focus:border-rojosuave" />
+        </div>
+        <div>
+          <label for="tarjeta" class="block text-small font-semibold mb-1">Numero de la Targeta</label>
+          <input id="tarjeta" name="tarjeta" type="text" inputmode="numeric" placeholder="0000-0000-0000-0000" autocomplete="cc-number" class="w-full h-12 px-4 rounded-xl border border-grisclaro bg-blanco text-body focus:outline-none focus:border-rojosuave" />
+        </div>
+        <div class="grid grid-cols-2 gap-4">
+          <div>
+            <label for="caducidad" class="block text-small font-semibold mb-1">MM/YY</label>
+            <input id="caducidad" name="caducidad" type="text" placeholder="MM/YY" autocomplete="cc-exp" class="w-full h-12 px-4 rounded-xl border border-grisclaro bg-blanco text-body focus:outline-none focus:border-rojosuave" />
+          </div>
+          <div>
+            <label for="cvv" class="block text-small font-semibold mb-1">Codigo Targeta</label>
+            <input id="cvv" name="cvv" type="text" inputmode="numeric" placeholder="000" autocomplete="cc-csc" class="w-full h-12 px-4 rounded-xl border border-grisclaro bg-blanco text-body focus:outline-none focus:border-rojosuave" />
+          </div>
+        </div>
+        <div class="flex flex-wrap justify-center gap-4 pt-2">
+          <a href="trans_error.html" class="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-grisclaro bg-blanco text-grisoscuro text-small font-medium hover:bg-grismuyclaro transition">Simular error</a>
+          <button type="submit" class="inline-flex items-center gap-2 px-8 py-3 rounded-lg bg-rojooscuro hover:bg-rojohover text-blanco text-small font-medium transition"><svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 7l1.5 3 3.3.5-2.4 2.3.6 3.3-3-1.6-3 1.6.6-3.3-2.4-2.3 3.3-.5z"/></svg>Realizar la compra</button>
+        </div>
+      </form>
+    </main>
+    <footer class="bg-rojosuave text-blanco font-subheading text-small sm:text-subheading px-6 sm:px-[72px] py-4 mt-auto">
+      Todos los derechos reservados
+    </footer>
   </body>
 </html>
