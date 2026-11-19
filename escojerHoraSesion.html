@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Escoger día y hora</title>
+    <link rel="stylesheet" href="css/colors.css" />
+    <link rel="stylesheet" href="fonts/typography.css" />
+    <link rel="stylesheet" href="fonts/sizes.css" />
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/headers.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="js/tailwind-config.js"></script>
+  </head>
+  <body class="bg-blancoroto font-body text-grisoscuro min-h-screen flex flex-col">
+    <header class="header-pelicula relative overflow-hidden text-blanco" aria-label="Información de la película">
+        <img src="img/cabecera-pelicula.png" alt="" class="header-img absolute inset-0 w-full h-full object-cover" />
+        <div class="relative z-10">
+        <div class="flex items-center justify-between gap-4 px-4 sm:px-8 pt-4">
+          <nav aria-label="Navegación principal" class="flex items-center gap-3">
+            <a href="index.html" aria-label="Ir al inicio" class="inline-flex text-blanco hover:opacity-80 transition"><svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/></svg></a>
+            <a href="sinopsis.html" aria-label="Volver" class="inline-flex text-blanco hover:opacity-80 transition"><svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5"/><path d="M12 19l-7-7 7-7"/></svg></a>
+          </nav>
+          <nav aria-label="Cuenta de usuario" class="flex items-center gap-3">
+            <a href="perfilUsuari.html" aria-label="Perfil de usuario" class="inline-flex"><span class="grid place-items-center w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-rojooscuro text-blanco border border-grisclaro">
+              <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+            </span></a>
+            <a href="Login.html" aria-label="Cerrar sesión" class="inline-flex text-blanco hover:opacity-80 transition"><svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><path d="M16 17l5-5-5-5"/><path d="M21 12H9"/></svg></a>
+          </nav>
+        </div>
+        <div class="px-4 pt-6 pb-8 sm:pb-10 text-center">
+          <h1 class="font-ui text-subheading font-medium">Hasta el horizonte</h1>
+          <p class="mt-1 flex flex-wrap justify-center items-center gap-2 text-small">
+            <span>159 min</span><span aria-hidden="true">|</span><span>Acción, Drama</span>
+          </p>
+        </div>
+        </div>
+      </header>
+    <main class="flex-1 mx-auto w-full max-w-[980px] px-4 sm:px-8 py-8">
+      <section aria-labelledby="date-heading" class="rounded-xl border border-grisclaro bg-blancoroto p-4">
+        <div class="flex justify-between text-caption"><h2 id="date-heading">Elije el Día</h2><p>4 sesiones</p></div>
+        <nav aria-label="Seleccionar fecha" class="mt-3 flex items-center gap-2">
+          <button type="button" aria-label="Día anterior" class="grid place-items-center w-7 h-7 shrink-0 rounded-full bg-rojosuave text-blanco"><svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg></button>
+          <div class="flex flex-1 gap-3 overflow-x-auto">
+            <button type="button" aria-pressed="false" class="flex-1 min-w-[90px] py-2 rounded-md border text-small bg-blanco hover:bg-grismuyclaro border-grisclaro transition">28 OCT</button>
+            <button type="button" aria-pressed="true" class="flex-1 min-w-[90px] py-2 rounded-md border text-small bg-rojosuave text-blanco border-rojosuave transition">29 OCT</button>
+            <button type="button" aria-pressed="false" class="flex-1 min-w-[90px] py-2 rounded-md border text-small bg-blanco hover:bg-grismuyclaro border-grisclaro transition">30 OCT</button>
+            <button type="button" aria-pressed="false" class="flex-1 min-w-[90px] py-2 rounded-md border text-small bg-blanco hover:bg-grismuyclaro border-grisclaro transition">01 NOV</button>
+            </div>
+          <button type="button" aria-label="Día siguiente" class="grid place-items-center w-7 h-7 shrink-0 rounded-full bg-rojosuave text-blanco"><svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg></button>
+        </nav>
+      </section>
+      <section aria-labelledby="times-heading" class="mt-8">
+        <h2 id="times-heading" class="font-heading font-semibold text-heading text-center pb-3 border-b border-grismuyclaro">Horarios</h2>
+        <div class="mt-6 grid grid-cols-2 md:grid-cols-4 gap-4 max-w-[760px] mx-auto">
+          <a href="selecioSeients.html" aria-pressed="false" class="flex flex-col items-center py-3 rounded-xl border bg-grisclaro hover:bg-grismuyclaro border-transparent transition"><span class="text-caption font-semibold">3D</span><span class="font-body text-heading">09:00</span></a>
+          <a href="selecioSeients.html" aria-pressed="false" class="flex flex-col items-center py-3 rounded-xl border bg-grisclaro hover:bg-grismuyclaro border-transparent transition"><span class="text-caption font-semibold">2D</span><span class="font-body text-heading">10:00</span></a>
+          <a href="selecioSeients.html" aria-pressed="false" class="flex flex-col items-center py-3 rounded-xl border bg-grisclaro hover:bg-grismuyclaro border-transparent transition"><span class="text-caption font-semibold">2D</span><span class="font-body text-heading">14:00</span></a>
+          <a href="selecioSeients.html" aria-pressed="false" class="flex flex-col items-center py-3 rounded-xl border bg-grisclaro hover:bg-grismuyclaro border-transparent transition"><span class="text-caption font-semibold">2D</span><span class="font-body text-heading">15:00</span></a>
+          <a href="selecioSeients.html" aria-pressed="true" class="flex flex-col items-center py-3 rounded-xl border bg-rojosuave text-blanco border-grisoscuro transition"><span class="text-caption font-semibold">2D</span><span class="font-body text-heading">16:00</span></a>
+          <a href="selecioSeients.html" aria-pressed="false" class="flex flex-col items-center py-3 rounded-xl border bg-grisclaro hover:bg-grismuyclaro border-transparent transition"><span class="text-caption font-semibold">2D</span><span class="font-body text-heading">20:00</span></a>
+          <a href="selecioSeients.html" aria-pressed="false" class="flex flex-col items-center py-3 rounded-xl border bg-grisclaro hover:bg-grismuyclaro border-transparent transition"><span class="text-caption font-semibold">2D</span><span class="font-body text-heading">22:00</span></a>
+          <a href="selecioSeients.html" aria-pressed="false" class="flex flex-col items-center py-3 rounded-xl border bg-grisclaro hover:bg-grismuyclaro border-transparent transition"><span class="text-caption font-semibold">2D</span><span class="font-body text-heading">23:00</span></a>
+          </div>
+      </section>
+    </main>
+    <footer class="bg-rojosuave text-blanco font-subheading text-small sm:text-subheading px-6 sm:px-[72px] py-4 mt-auto">
+      Todos los derechos reservados
+    </footer>
+  </body>
+</html>

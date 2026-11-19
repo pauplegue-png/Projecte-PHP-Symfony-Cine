@@ -20,38 +20,3 @@ button:focus-visible {
 a {
   text-decoration: none;
 }
-
-/* @FONTWARNING[{"type": "restricted", "family": "Nunito-Bold", "weight": "700", "style": "normal", "allowsCrossOrigin": false}] */
-
-@font-face {
-  font-family: "Nunito-Bold";
-  src: local("Nunito-Bold");
-}
-
-/* @FONTWARNING[{"type": "restricted", "family": "Lato-SemiBold", "weight": "600", "style": "normal", "allowsCrossOrigin": false}] */
-
-@font-face {
-  font-family: "Lato-SemiBold";
-  src: local("Lato-SemiBold");
-}
-
-/* @FONTWARNING[{"type": "restricted", "family": "Lato-Bold", "weight": "700", "style": "normal", "allowsCrossOrigin": false}] */
-
-@font-face {
-  font-family: "Lato-Bold";
-  src: local("Lato-Bold");
-}
-
-/* @FONTWARNING[{"type": "restricted", "family": "Lato-Medium", "weight": "500", "style": "normal", "allowsCrossOrigin": false}] */
-
-@font-face {
-  font-family: "Lato-Medium";
-  src: local("Lato-Medium");
-}
-
-/* @FONTWARNING[{"type": "restricted", "family": "Inter", "weight": "400", "style": "normal", "allowsCrossOrigin": false}] */
-
-@font-face {
-  font-family: "Inter";
-  src: local("Inter");
-}

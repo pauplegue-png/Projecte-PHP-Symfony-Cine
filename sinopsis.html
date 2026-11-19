@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sinopsis</title>
+    <link rel="stylesheet" href="css/colors.css" />
+    <link rel="stylesheet" href="fonts/typography.css" />
+    <link rel="stylesheet" href="fonts/sizes.css" />
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/headers.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="js/tailwind-config.js"></script>
+  </head>
+  <body class="bg-blancoroto font-body text-grisoscuro min-h-screen flex flex-col">
+    <header aria-label="Navegación">
+      <div class="text-grisoscuro"><div class="flex items-center justify-between gap-4 px-4 sm:px-8 pt-4">
+          <nav aria-label="Navegación principal" class="flex items-center gap-3">
+            <a href="index.html" aria-label="Ir al inicio" class="inline-flex text-grisoscuro hover:opacity-80 transition"><svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/></svg></a>
+            <a href="index.html" aria-label="Volver" class="inline-flex text-grisoscuro hover:opacity-80 transition"><svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5"/><path d="M12 19l-7-7 7-7"/></svg></a>
+          </nav>
+          <nav aria-label="Cuenta de usuario" class="flex items-center gap-3">
+            <a href="perfilUsuari.html" aria-label="Perfil de usuario" class="inline-flex"><span class="grid place-items-center w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-rojooscuro text-blanco border border-grisclaro">
+              <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+            </span></a>
+            <a href="Login.html" aria-label="Cerrar sesión" class="inline-flex text-grisoscuro hover:opacity-80 transition"><svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><path d="M16 17l5-5-5-5"/><path d="M21 12H9"/></svg></a>
+          </nav>
+        </div></div>
+    </header>
+    <main class="flex-1 mx-auto w-full max-w-[1100px] px-4 sm:px-8 py-8">
+      <section aria-labelledby="movie-title" class="grid gap-8 md:grid-cols-[240px_1fr] items-start">
+        <div class="relative aspect-[2/3] overflow-hidden rounded-sm bg-gradient-to-br from-grismediooscuro to-grisoscuro shadow-lg w-48 md:w-full mx-auto">
+              <span class="absolute inset-0 grid place-items-center p-3 text-center text-blanco font-heading font-bold">Hasta el horizonte</span>
+              <img src="img/image-1.png" alt="Póster de Hasta el horizonte" class="relative w-full h-full object-cover" onerror="this.remove()" />
+            </div>
+        <article class="grid gap-5 md:grid-cols-[1fr_auto] md:items-start">
+          <div>
+            <h1 id="movie-title" class="font-heading font-semibold text-title">Hasta el horizonte</h1>
+            <p class="mt-2 flex items-center gap-4 text-subheading"><span class="text-naranja">+ 12</span><span>Duración: 150 min</span></p>
+          </div>
+          <a href="escojerHoraSesion.html" aria-label="Comprar entradas para Hasta el horizonte" class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg bg-rojooscuro hover:bg-rojohover text-blanco text-small font-medium w-fit transition"><svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 7l1.5 3 3.3.5-2.4 2.3.6 3.3-3-1.6-3 1.6.6-3.3-2.4-2.3 3.3-.5z"/></svg>Comprar Entradas</a>
+          <p class="md:col-span-2 text-center text-small leading-relaxed max-w-[640px] mx-auto">Tiempo después de su ruptura, Sara y Jackson se reencuentran unos días antes de la boda de un amigo en común que se casa en una isla remota. Juntos atraviesan el océano camino a la boda, pero cuando el piloto de la avioneta sufre un ataque al corazón, ellos deberán hacer lo imposible para mantener la avioneta en el aire.</p>
+        </article>
+      </section>
+      <section aria-label="Información adicional" class="mt-12 grid gap-10 md:grid-cols-[1fr_1fr]">
+        <div>
+          <h2 class="font-body text-heading text-center md:text-left">Reparto</h2>
+          <div class="mt-4 flex gap-3 overflow-x-auto">
+            <figure class="shrink-0 w-56">
+              <div class="h-64 rounded-2xl bg-gradient-to-b from-rojosuave to-rojooscuro text-blanco text-caption p-3 flex items-end">Label</div>
+              <figcaption class="mt-2 text-center text-small">Rol de la persona</figcaption>
+            </figure>
+            <div class="shrink-0 w-8 h-64 rounded-2xl bg-rojooscuro" aria-hidden="true"></div>
+          </div>
+        </div>
+        <div>
+          <h2 class="font-body text-heading text-center">Premios</h2>
+          <p class="mt-4 text-center text-small">Lamentablemente no ha sido nominada ni premiada</p>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-rojosuave text-blanco font-subheading text-small sm:text-subheading px-6 sm:px-[72px] py-4 mt-auto">
+      Todos los derechos reservados
+    </footer>
+  </body>
+</html>

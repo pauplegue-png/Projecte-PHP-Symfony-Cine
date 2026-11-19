@@ -1,0 +1,22 @@
+/* Tipografías: familias y pesos disponibles en el proyecto. */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Lato:wght@400;700&family=Nunito:wght@400;600;700;800&display=swap");
+
+:root {
+  --font-heading: "Nunito", "Nunito-Bold", Helvetica, Arial, sans-serif;
+  --font-body: "Lato", "Lato-Medium", Helvetica, Arial, sans-serif;
+  --font-ui: "Inter", Helvetica, Arial, sans-serif;
+
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+
+  --subheading-font-family: var(--font-ui);
+  --subheading-font-weight: var(--font-weight-regular);
+  --subheading-font-style: normal;
+}
+
+body {
+  font-family: var(--font-body);
+}
